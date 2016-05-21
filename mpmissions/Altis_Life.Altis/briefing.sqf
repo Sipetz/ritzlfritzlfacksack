@@ -1,5 +1,4 @@
 waitUntil {!isNull player && player == player};
-// test Konflikt !! //
 if(player diarySubjectExists "controls") exitWith {};
 
 player createDiarySubject ["credits","Credits"];
