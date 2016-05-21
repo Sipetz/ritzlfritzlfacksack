@@ -135,6 +135,7 @@ class Life_Client_Core {
 		class vehInvSearch {};
 		class wantedGrab {};
 		class breathalyzer {};
+		class alkoholdrugtester {};
 	};
 
 	class Dialog_Controls {

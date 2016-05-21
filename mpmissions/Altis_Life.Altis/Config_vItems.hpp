@@ -897,7 +897,7 @@ class VirtualItems {
 		sellPrice = 7000;
 		illegal = true;
 		edible = 10;
-		icon = "icons\ico_muttonLeg.paa";	
+		icon = "icons\ico_moonshineflasche.paa";
 	};
 
 	class bottledwhiskey {
@@ -908,7 +908,7 @@ class VirtualItems {
 		sellPrice = 5000;
 		illegal = false;
 		edible = 10;
-		icon = "icons\ico_muttonLeg.paa";	
+		icon = "icons\ico_whiskyflasche.paa";
 	};
 
 	class bottledBeer {
@@ -919,7 +919,7 @@ class VirtualItems {
 		sellPrice = 3000;
 		illegal = false;
 		edible = 10;
-		icon = "icons\ico_muttonLeg.paa";	
+		icon = "icons\ico_bierflasche.paa";
 	};
 
 	class bottledapplej {
@@ -930,7 +930,7 @@ class VirtualItems {
 		sellPrice = 1000;
 		illegal = false;
 		edible = 10;
-		icon = "icons\ico_muttonLeg.paa";
+		icon = "icons\ico_apfelsaft.paa";
 	};
 
 	class moonshine {
@@ -941,7 +941,7 @@ class VirtualItems {
 		sellPrice = -1;
 		illegal = true;
 		edible = -1;
-		icon = "icons\ico_muttonLeg.paa";
+		icon = "icons\ico_bierfass.paa";
 	};
 
 	class whiskey {
@@ -952,7 +952,7 @@ class VirtualItems {
 		sellPrice = -1;
 		illegal = false;
 		edible = -1;
-		icon = "icons\ico_muttonLeg.paa";
+		icon = "icons\ico_bierfass.paa";
 	};
 
 	class beerp {
@@ -963,7 +963,7 @@ class VirtualItems {
 		sellPrice = -1;
 		illegal = false;
 		edible = -1;
-		icon = "icons\ico_muttonLeg.paa";
+		icon = "icons\ico_bierfass.paa";
 	};
 
 	class mash {
@@ -974,7 +974,7 @@ class VirtualItems {
 		sellPrice = -1;
 		illegal = true;
 		edible = -1;
-		icon = "icons\ico_muttonLeg.paa";
+		icon = "icons\ico_meische.paa";
 	};
 
 	class rye {
@@ -985,7 +985,7 @@ class VirtualItems {
 		sellPrice = -1;
 		illegal = false;
 		edible = -1;
-		icon = "icons\ico_muttonLeg.paa";
+		icon = "icons\ico_roggen.paa";
 	};
 
 	class hops {
@@ -996,7 +996,7 @@ class VirtualItems {
 		sellPrice = -1;
 		illegal = false;
 		edible = -1;
-		icon = "icons\ico_muttonLeg.paa";
+		icon = "icons\ico_hopfen.paa";
 	};
 
 	class yeast {
@@ -1007,7 +1007,7 @@ class VirtualItems {
 		sellPrice = -1;
 		illegal = false;
 		edible = -1;
-		icon = "icons\ico_muttonLeg.paa";
+		icon = "icons\ico_hefe.paa";
 	};
 
 	class cornmeal {
@@ -1018,7 +1018,7 @@ class VirtualItems {
 		sellPrice = 200;
 		illegal = false;
 		edible = -1;
-		icon = "icons\ico_muttonLeg.paa";
+		icon = "icons\ico_cornmeal.paa";
 	};
 
 	class bottles {
@@ -1029,7 +1029,7 @@ class VirtualItems {
 		sellPrice = 75;
 		illegal = false;
 		edible = -1;
-		icon = "icons\ico_muttonLeg.paa";
+		icon = "icons\ico_glasflaschen.paa";
 	};
 
 	class applej {
@@ -1040,7 +1040,7 @@ class VirtualItems {
 		sellPrice = 75;
 		illegal = false;
 		edible = -1;
-		icon = "icons\ico_muttonLeg.paa";		
+		icon = "icons\ico_bierfass.paa";
 		
 	};
 };

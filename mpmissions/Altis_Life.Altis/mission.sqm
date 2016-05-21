@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=129;
 	class ItemIDProvider
 	{
 		nextID=1202;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3316.144,19.31633,12941.806};
-		dir[]={-0.074079849,-0.79191655,0.6062429};
-		up[]={-0.096053518,0.61062384,0.78606373};
-		aside[]={0.99269921,3.6909478e-007,0.12130504};
+		pos[]={3312.2883,8.5620565,12949.169};
+		dir[]={-0.04925156,-0.67728138,0.73417979};
+		up[]={-0.045334563,0.73569334,0.67578363};
+		aside[]={0.99784899,4.6514288e-007,0.066941082};
 	};
 };
 binarizationWanted=0;
@@ -99,6 +99,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -113,24 +131,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -4940,7 +4940,6 @@ class Mission
 				angles[]={0,3.0901928,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4948,6 +4947,7 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
+			atlOffset=1.1842289;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33698,7 +33698,6 @@ class Mission
 						angles[]={0,0.0679636,6.2826972};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -33706,6 +33705,7 @@ class Mission
 					};
 					id=1008;
 					type="C_man_p_fugitive_F_asia";
+					atlOffset=1.2672386;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34420,7 +34420,6 @@ class Mission
 						angles[]={0,0.53849125,6.2823396};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -34428,6 +34427,7 @@ class Mission
 					};
 					id=1020;
 					type="C_man_1";
+					atlOffset=0.51165199;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -39766,6 +39766,7 @@ class Mission
 			dataType="Marker";
 			position[]={3310.1697,2.1987705,12955.881};
 			name="Brennerei";
+			text="Brennerei";
 			type="mil_box";
 			colorName="ColorBrown";
 			id=1197;
@@ -39775,6 +39776,7 @@ class Mission
 			dataType="Marker";
 			position[]={3312.3376,2.1552408,12955.878};
 			name="Brauerei";
+			text="Brauerei";
 			type="mil_box";
 			colorName="ColorBrown";
 			id=1198;
@@ -39784,6 +39786,7 @@ class Mission
 			dataType="Marker";
 			position[]={3314.957,2.158478,12956.367};
 			name="Abfueller";
+			text="Abfüller";
 			type="mil_box";
 			colorName="ColorBrown";
 			id=1199;
@@ -39793,6 +39796,7 @@ class Mission
 			dataType="Marker";
 			position[]={3317.9575,2.1507146,12956.801};
 			name="MrMoonshine";
+			text="@STR_Shops_MRMoonshine";
 			type="mil_box";
 			colorName="ColorBrown";
 			id=1200;
@@ -39802,6 +39806,7 @@ class Mission
 			dataType="Marker";
 			position[]={3321.4438,2.0366101,12957.076};
 			name="Kneipe";
+			text="Kneipe/Bar";
 			type="mil_box";
 			colorName="ColorBrown";
 			id=1201;

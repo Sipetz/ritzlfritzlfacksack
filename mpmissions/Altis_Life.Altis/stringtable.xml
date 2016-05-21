@@ -266,8 +266,8 @@
 			<Polish>Caffe OLLEN</Polish>
 		</Key>
 		<Key ID="STR_Shops_MRMoonshine">
-			<Original>MR. Moonshine</Original>
-			<German>MR. Moonshine</German>
+			<Original>MR.Moonshine</Original>
+			<German>MR.Moonshine</German>
 		</Key>
 		<Key ID="STR_Shops_alkbar">
 			<Original>Pub</Original>
@@ -7906,6 +7906,12 @@
 			<Italian>Accendi luci</Italian>
 			<Portuguese>Apagar as Luzes</Portuguese>
 			<Polish>Wyłącz światło</Polish>
+		</Key>
+		<Key ID="STR_MISC_AlreadyDrinking">
+			<Original>Du trinkst bereits geiles Zeug...</Original>
+		</Key>
+		<Key ID="STR_MISC_WestIndNoNo">
+			<Original>Im Dienst wird nicht getrunken</Original>
 		</Key>
 		<Key ID="STR_pInAct_Breathalyzer">
 			<Original>Breathalyzer</Original>

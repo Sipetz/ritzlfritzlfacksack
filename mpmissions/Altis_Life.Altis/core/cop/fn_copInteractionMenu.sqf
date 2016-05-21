@@ -42,8 +42,8 @@ _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
-
 _Btn9 = _display displayCtrl Btn9; // neu Alktest
+
 life_pInact_curTarget = _curTarget;
 
 if((player getVariable["isEscorting",false])) then {
@@ -93,5 +93,5 @@ if(!((player distance (getMarkerPos "police_hq_1") < 30) OR  (player distance (g
 	
 //Set Alktest
 Button_Btn9 ctrlSetText localize "STR_pInAct_Breathalyzer";
-_Btn9 buttonSetAction "[[player],""life_fnc_breathalyzer"",life_pInact_curTaget,FALSE] spawn life_fnc_MP;closeDialog 0";	
+_Btn9 buttonSetAction "[[player],""life_fnc_breathalyzer"",""life_fnc_alkoholdrugtester"",life_pInact_curTaget,FALSE] spawn life_fnc_MP;closeDialog 0";	
 };
