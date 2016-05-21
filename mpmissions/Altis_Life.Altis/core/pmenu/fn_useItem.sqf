@@ -6,13 +6,20 @@
 	Description:
 	Main function for item effects and functionality through the player menu.
 */
-private "_item";
+
+private ["_item", "_data"];
 disableSerialization;
 if(EQUAL(lbCurSel 2005,-1)) exitWith {hint localize "STR_ISTR_SelectItemFirst";};
 _item = CONTROL_DATA(2005);
 
+/*
+	_data = lbData[2005,(lbCurSel 2005)];
+	_item = ctrlText 2010;
+	if(EQUAL(_data,"")) exitWith {hint localize "STR_ISTR_SelectItemFirst";};
+*/
+
 switch (true) do {
-	case (_item in ["waterBottle","coffee","redgull","bottledapplej]): {
+	case (_item in ["waterBottle","coffee","redgull","bottledapplej"]): {
 		if(([false,_item,1] call life_fnc_handleInv)) then {
 			life_thirst = 100;
 			if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),1)) then {player setFatigue 0;};
@@ -70,47 +77,41 @@ switch (true) do {
 	case (_item =="bottledwhiskey"): {
 		if(playerSide in [west,independet]) exitWith {hint localize "STR_MSC_WestIndNoNo";};
 		if((player getVariable ["inDrink", FALSE])) exitWith {hint localize "STR_MISC_AlreadyDrinking";};
-		if(([false,_item,1] call life_fnc_handleInv))then
-	{
+		if(([false,_item,1] call life_fnc_handleInv))then {
 			life_thirst = 100;
-		if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),1)) then {player setFatigue 0;};
-		if(isNil "life_drink") then {life_drink = 0;};
+			if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),1)) then {player setFatigue 0;};
+			if(isNil "life_drink") then {life_drink = 0;};
 			life_drink = life_drink + 0.06;
-		if (life_drink < 0.07) exitWith {};
+			if (life_drink < 0.07) exitWith {};
 			[] spawn life_fnc_drinkwhiskey;
 		};	
 	};
-};
 
 	case (_item =="bottledshine"): {
 		if(playerSide in [west,independet]) exitWith {hint localize "STR_MSC_WestIndNoNo";};
 		if((player getVariable ["inDrink", FALSE])) exitWith {hint localize "STR_MISC_AlreadyDrinking";};
-		if(([false,_item,1] call life_fnc_handleInv))then
-	{
+		if(([false,_item,1] call life_fnc_handleInv))then {
 			life_thirst = 100;
-		if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),1)) then {player setFatigue 0;};
-		if(isNil "life_drink") then {life_drink = 0;};
+			if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),1)) then {player setFatigue 0;};
+			if(isNil "life_drink") then {life_drink = 0;};
 			life_drink = life_drink + 0.08;
-		if (life_drink < 0.09) exitWith {};
+			if (life_drink < 0.09) exitWith {};
 			[] spawn life_fnc_drinkmoonshine;
 		};	
 	};
-};
 
 	case (_item =="bottledbeer"): {
 		if(playerSide in [west,independet]) exitWith {hint localize "STR_MSC_WestIndNoNo";};
 		if((player getVariable ["inDrink", FALSE])) exitWith {hint localize "STR_MISC_AlreadyDrinking";};
-		if(([false,_item,1] call life_fnc_handleInv))then
-	{
+		if(([false,_item,1] call life_fnc_handleInv))then {
 			life_thirst = 100;
-		if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),1)) then {player setFatigue 0;};
-		if(isNil "life_drink") then {life_drink = 0;};
+			if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),1)) then {player setFatigue 0;};
+			if(isNil "life_drink") then {life_drink = 0;};
 			life_drink = life_drink + 0.02;
-		if (life_drink < 0.06) exitWith {};
+			if (life_drink < 0.06) exitWith {};
 			[] spawn life_fnc_drinkbeer;
 		};	
 	};
-};
 	
 	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","donuts","tbacon","peach"]): {
 		if(!(EQUAL(M_CONFIG(getNumber,"VirtualItems",_item,"edible"),-1))) then {

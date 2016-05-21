@@ -19,7 +19,7 @@ class Life_Settings {
     /* Player Data Saving */
     save_virtualItems = true; //Save Virtual items (all sides)?
     saved_virtualItems[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" }; //Array of virtual items that can be saved on your player.
-    save_playerStats = true; //Save food, water and damage (all sides)?
+    save_playerStats = false; //Save food, water and damage (all sides)?
     save_civilian_weapons = true; //Allow civilians to save weapons on them?
     save_civilian_position = false; //Save civilian location?
     save_civilian_position_restart = false; //Save civilian location only between restarts. After a server restart you'll have to spawn again.
@@ -147,7 +147,6 @@ class Life_Settings {
         {"STR_Crime_211","100","211"},
         {"STR_Crime_207","350","207"},
         {"STR_Crime_207A","200","207A"},
-        {"STR_Crime_390","1500","390"},
         {"STR_Crime_487","150","487"},
         {"STR_Crime_488","70","488"},
         {"STR_Crime_480","100","480"},

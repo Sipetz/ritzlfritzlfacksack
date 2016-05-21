@@ -1,4 +1,5 @@
 #include <macro.h>
+#include "..\..\script_macros.hpp"
 /*
 BY OPTIX aka steamcommunity.com/id/ryanthett
 THIS HEADER HAS TO BE LEFT UNCHANGED UNDER ALL CIRCUMSTANCES!
@@ -25,15 +26,16 @@ call compile format ["_lizenzBoolean = %1",_lizenzBenoetigt];
 _nah = false;
 
 if (!_lizenzBoolean) then {
-if (CASH>=_lizenzKaufkosten) then {
-CASH = CASH - _lizenzKaufkosten;
-call compile format ["%1 = true",_lizenzBenoetigt];
-hint format ["Du hast eine Lizenz fuer %1 Dollar gekauft und kannst nun verarbeiten!",_lizenzKaufkosten];
-} else {
-hint format ["Leider hast du nicht %1 Dollar dabei, um eine Lizenz zu erwerben!",_lizenzKaufkosten];
-if (true) exitWith {life_is_processing = false;5 cutText ["","PLAIN"];_nah=true};
+	if (CASH >=_lizenzKaufkosten) then {
+		CASH = CASH - _lizenzKaufkosten;
+		call compile format ["%1 = true",_lizenzBenoetigt];
+		hint format ["Du hast eine Lizenz fuer %1 Dollar gekauft und kannst nun verarbeiten!",_lizenzKaufkosten];
+	} else {
+		hint format ["Leider hast du nicht %1 Dollar dabei, um eine Lizenz zu erwerben!",_lizenzKaufkosten];
+		if (true) exitWith {life_is_processing = false;5 cutText ["","PLAIN"];_nah=true};
+	};
 };
-};
+
 if (_nah) exitWith {life_is_processing = false;5 cutText ["","PLAIN"]};
 // PRÜFEN, OB ITEMS VORHANDEN SIND
 _nah = false;

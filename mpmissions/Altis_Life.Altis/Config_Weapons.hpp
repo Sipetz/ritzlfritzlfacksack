@@ -147,7 +147,6 @@ class WeaponShops {
             { "FirstAidKit", "", 150, 65 },
             { "NVGoggles", "", 2000, 980 },
 			{ "tf_anprc152", "Funk", 2000, 980 },
-			{ "tf_RT-1523G", "Funk", 2000, 980 }
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 25 },
