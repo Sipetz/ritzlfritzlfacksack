@@ -228,7 +228,14 @@ switch (_code) do {
 			};
 		};
 	};
-
+	
+	//P Key Schranken im Auto öffnen
+	case 25: {
+		if(playerSide in [west,independent,east] && vehicle player != player && ((driver vehicle player) == player)) then {
+			[] call life_fnc_Opener;
+		};
+	};
+	
 	//U Key
 	case 22: {
 		if(!_alt && !_ctrlKey) then {

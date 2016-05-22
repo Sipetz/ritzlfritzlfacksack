@@ -8,7 +8,7 @@ class EditorData
 	toggles=129;
 	class ItemIDProvider
 	{
-		nextID=1202;
+		nextID=1223;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3312.2883,8.5620565,12949.169};
-		dir[]={-0.04925156,-0.67728138,0.73417979};
-		up[]={-0.045334563,0.73569334,0.67578363};
-		aside[]={0.99784899,4.6514288e-007,0.066941082};
+		pos[]={3308.5969,4.1628528,12947.313};
+		dir[]={0.20750232,-0.35528252,0.91147214};
+		up[]={0.078868985,0.93474585,0.34643811};
+		aside[]={0.97508287,1.8416904e-007,-0.22198585};
 	};
 };
 binarizationWanted=0;
@@ -65,7 +65,8 @@ addons[]=
 	"a3_characters_f",
 	"A3_Characters_F_Civil",
 	"A3_Characters_F_OPFOR",
-	"A3_Characters_F_EPC"
+	"A3_Characters_F_EPC",
+	"pub_c"
 };
 randomSeed=2639488;
 class ScenarioData
@@ -99,24 +100,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -131,6 +114,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -189,7 +190,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=884;
+		items=886;
 		class Item0
 		{
 			dataType="Marker";
@@ -566,7 +567,7 @@ class Mission
 		class Item38
 		{
 			dataType="Marker";
-			position[]={3647.8298,10.226415,13122.039};
+			position[]={3657.1079,10.320651,13116.354};
 			name="civ_car_1";
 			type="Empty";
 			angle=222.94591;
@@ -575,7 +576,7 @@ class Mission
 		class Item39
 		{
 			dataType="Marker";
-			position[]={3653.8333,10.282446,13121.501};
+			position[]={3654.4749,10.288434,13121.501};
 			name="civ_car_1_1";
 			type="Empty";
 			angle=208.40822;
@@ -24331,13 +24332,13 @@ class Mission
 				angles[]={0,2.7419298,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=747;
 			type="Land_CashDesk_F";
+			atlOffset=0.56286049;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24491,13 +24492,13 @@ class Mission
 				angles[]={0,6.0063586,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=751;
 			type="Land_CashDesk_F";
+			atlOffset=0.3939209;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24538,6 +24539,7 @@ class Mission
 			};
 			id=752;
 			type="Land_CashDesk_F";
+			atlOffset=0.18852997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24780,6 +24782,7 @@ class Mission
 			};
 			id=758;
 			type="Land_CashDesk_F";
+			atlOffset=0.19405365;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -36832,7 +36835,6 @@ class Mission
 						angles[]={0,6.1261058,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -36840,6 +36842,7 @@ class Mission
 					};
 					id=1067;
 					type="C_Nikos_aged";
+					atlOffset=0.57194901;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37072,7 +37075,6 @@ class Mission
 						angles[]={0,2.8397205,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -37080,6 +37082,7 @@ class Mission
 					};
 					id=1075;
 					type="C_Nikos_aged";
+					atlOffset=0.42167664;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37140,6 +37143,7 @@ class Mission
 					};
 					id=1077;
 					type="C_Nikos_aged";
+					atlOffset=0.19090271;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37500,6 +37504,7 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
+					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -39349,7 +39354,7 @@ class Mission
 					{
 						skill=0.2;
 						init="this allowDamage false; this enableSimulation false; this addAction [ ""Process Mash"", { [[[""cornmeal"",1],[""waterbottle"",1]],""license_civ_mashL"",50000,[[""mash"",1],[""AItem:>"",2]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mashL"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mashL"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mashL"",0,false,false,"""""""",' !license_civ_mashL && playerSide == civilian '];this addAction [ ""Process Moonshine"", { [[[""mash"",1],[""yeast"",1]],""license_civ_MoonshineL"",50000,[[""Moonshine"",1],[""AItem:>"",2]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""MoonshineL"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""MoonshineL"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""MoonshineL"",0,false,false,"""""""",' !license_civ_MoonshineL && playerSide == civilian '];this addAction [ ""Process Whiskey"", { [[[""rye"",1],[""yeast"",1],[""waterbottle"",1]],""license_civ_WhiskeyL"",50000,[[""whiskey"",1],[""AItem:>"",3]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""WhiskeyL"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""WhiskeyL"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""WhiskeyL"",0,false,false,"""",' !license_civ_WhiskeyL && playerSide == civilian '];";
-						name="Brennerei";
+						name="Brennerei1";
 					};
 					id=1183;
 					type="C_man_p_fugitive_F_asia";
@@ -39593,7 +39598,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3318.0901,2.1159694,12955.59};
+						position[]={3318.0251,2.1073282,12955.266};
 					};
 					side="Civilian";
 					flags=7;
@@ -39666,7 +39671,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3321.509,2.0357878,12955.908};
+						position[]={3636.9424,11.590837,13120.852};
+						angles[]={0,1.4954207,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -39678,7 +39684,6 @@ class Mission
 					};
 					id=1193;
 					type="C_man_p_beggar_F";
-					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -39727,14 +39732,13 @@ class Mission
 			{
 			};
 			id=1192;
-			atlOffset=2.3841858e-007;
 		};
 		class Item876
 		{
 			dataType="Marker";
 			position[]={4827.9722,9.2258301,10346.345};
 			name="yeast_1";
-			text="@STR_Item_Yeast";
+			text="@STR_MAR_yeast_Field";
 			type="loc_Tree";
 			colorName="ColorOrange";
 			id=1194;
@@ -39745,7 +39749,7 @@ class Mission
 			dataType="Marker";
 			position[]={5457.0674,94.817276,10762.927};
 			name="rye_1";
-			text="@STR_Item_Rye";
+			text="@STR_MAR_rye_Field";
 			type="loc_Tree";
 			colorName="ColorOrange";
 			id=1195;
@@ -39755,7 +39759,7 @@ class Mission
 			dataType="Marker";
 			position[]={5670.9106,11.69165,10377.951};
 			name="hops_1";
-			text="@STR_Item_Hops";
+			text="@STR_MAR_hops_Field";
 			type="loc_Tree";
 			colorName="ColorOrange";
 			id=1196;
@@ -39766,7 +39770,7 @@ class Mission
 			dataType="Marker";
 			position[]={3310.1697,2.1987705,12955.881};
 			name="Brennerei";
-			text="Brennerei";
+			text="@STR_MAR_Brennerei";
 			type="mil_box";
 			colorName="ColorBrown";
 			id=1197;
@@ -39776,7 +39780,7 @@ class Mission
 			dataType="Marker";
 			position[]={3312.3376,2.1552408,12955.878};
 			name="Brauerei";
-			text="Brauerei";
+			text="@STR_MAR_Brauerei";
 			type="mil_box";
 			colorName="ColorBrown";
 			id=1198;
@@ -39786,7 +39790,7 @@ class Mission
 			dataType="Marker";
 			position[]={3314.957,2.158478,12956.367};
 			name="Abfueller";
-			text="Abfüller";
+			text="@STR_MAR_Abfueller";
 			type="mil_box";
 			colorName="ColorBrown";
 			id=1199;
@@ -39794,7 +39798,7 @@ class Mission
 		class Item882
 		{
 			dataType="Marker";
-			position[]={3317.9575,2.1507146,12956.801};
+			position[]={3317.8926,2.1420717,12956.477};
 			name="MrMoonshine";
 			text="@STR_Shops_MRMoonshine";
 			type="mil_box";
@@ -39804,12 +39808,48 @@ class Mission
 		class Item883
 		{
 			dataType="Marker";
-			position[]={3321.4438,2.0366101,12957.076};
+			position[]={3636.5405,10.108875,13120.862};
 			name="Kneipe";
-			text="Kneipe/Bar";
+			text="@STR_MAR_Kneipe";
 			type="mil_box";
 			colorName="ColorBrown";
 			id=1201;
+		};
+		class Item884
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3638.9456,14.707481,13119.162};
+				angles[]={0,3.2463124,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1204;
+			type="Land_Pub_C";
+			atlOffset=2.2997656;
+		};
+		class Item885
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3309.9751,2.8658342,12951.063};
+				angles[]={6.2765183,0,6.2551899};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false; this enableSimulation false; this addAction [ ""Process Mash"", { [[[""cornmeal"",1],[""waterbottle"",1]],""license_civ_mashL"",50000,[[""mash"",1],[""AItem:>"",2]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mashL"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mashL"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mashL"",0,false,false,"""""""",' !license_civ_mashL && playerSide == civilian '];this addAction [ ""Process Moonshine"", { [[[""mash"",1],[""yeast"",1]],""license_civ_MoonshineL"",50000,[[""Moonshine"",1],[""AItem:>"",2]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""MoonshineL"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""MoonshineL"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""MoonshineL"",0,false,false,"""""""",' !license_civ_MoonshineL && playerSide == civilian '];this addAction [ ""Process Whiskey"", { [[[""rye"",1],[""yeast"",1],[""waterbottle"",1]],""license_civ_WhiskeyL"",50000,[[""whiskey"",1],[""AItem:>"",3]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""WhiskeyL"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""WhiskeyL"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""WhiskeyL"",0,false,false,"""",' !license_civ_WhiskeyL && playerSide == civilian '];";
+				name="Brennerei";
+			};
+			id=1221;
+			type="Land_WaterTank_F";
+			atlOffset=2.3841858e-007;
 		};
 	};
 };

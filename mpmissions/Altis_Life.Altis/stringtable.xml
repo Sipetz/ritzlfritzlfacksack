@@ -9327,6 +9327,50 @@
 			<Polish>Akcesoria do nurkowania</Polish>
 			<Italian>Negozio da Sub</Italian>
 		</Key>
+		<Key ID="STR_MAR_Brauerei">
+			<Original>brewery</Original>
+			<Czech></Czech>
+			<French></French>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Brauerei</German>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_MAR_Brennerei">
+			<Original>black distillery</Original>
+			<Czech></Czech>
+			<French></French>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Schwarz Brennerei</German>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_MAR_Abfueller">
+			<Original>bottling plant</Original>
+			<Czech></Czech>
+			<French></French>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Abfüllanlage</German>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_MAR_Kneipe">
+			<Original>Bar</Original>
+			<Czech></Czech>
+			<French></French>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Kneipe/Bar</German>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+			<Italian></Italian>
+		</Key>
 		<Key ID="STR_MAR_Drug_Dealer">
 			<Original>Drug Dealer</Original>
 			<Czech>Drug prodejce</Czech>
@@ -9348,6 +9392,39 @@
 			<Portuguese>Processador de Diamante</Portuguese>
 			<Polish>Szlifierz diamentów</Polish>
 			<Italian>Processo diamanti</Italian>
+		</Key>
+		<Key ID="STR_MAR_rye_Field">
+			<Original>Rye Field</Original>
+			<Czech></Czech>
+			<French></French>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Roggen Felder</German>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_MAR_yeast_Field">
+			<Original>Yeast Field</Original>
+			<Czech></Czech>
+			<French></French>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Hefe Felder</German>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_MAR_hops_Field">
+			<Original>Hops Field</Original>
+			<Czech></Czech>
+			<French></French>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Hopfen Felder</German>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+			<Italian></Italian>
 		</Key>
 		<Key ID="STR_MAR_Oil_Field">
 			<Original>Oil Field</Original>
