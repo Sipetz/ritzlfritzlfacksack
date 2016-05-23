@@ -43,13 +43,22 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Exploits", 
 				"
-				Diese gelten als Exploits, und Sie werden nicht gekickt, aber verboten.<br/><br/>
-
-				1. 1. Durch Glitches aus dem Gefängnis entkommen. Mit Hubschrauber fliehen ist erlaubt.
-2. Selbstmord begehen um aus einem Rollenspiel herauszukommen, auch wenn man getasert, gefesselt, verhaftet wird oder im Gefängnis sitzt. Wenn im Log steht, dass man nach einer Verhaftung gestorben ist, dann wird man gebant.<br/>
-3. Verdoppeln von Gegenständen und/oder Geld. Falls euch jemand am Anfang des Spiels einen viel zu hohen Geldbetrag schickt, meldet es sofort einem Admin. Ihr sollt euch das Geld selbst erarbeiten. Wir sprechen nicht von kleinen Starthilfen für Freunde, Schulden oder Überweisungen innerhalb von Gangs.<br/>
-4. Benutzen von gehackten Gegenständen. Ein Hacker kann im Spiel nicht integrierte Gegenstände spawnen lassen. Falls ihr solche Sachen findet, meldet es und fasst sie nicht an.<br/>
-5. Missbrauch von Bugs oder Spielmechaniken. Ist irgendwo eine Waffe, die sich dupliziert? Dann sagt den Admins bescheid. Falls euch ein Admin, beim Dupen erwischt, werdet ihr umgehend gebant.<br/><br/>
+				<ul><li>Die Ausnutzung von Exploits ist verboten - man wird deswegen jedoch nicht gekickt.</li><br/>
+				<li>Weitere Verbote - <b>mit Bann</b>: (Beispiele)</li><ul>
+				<li>Durch Glitches aus dem Gef&auml;ngnis entkommen (mit Hubschrauber fliehen ist erlaubt).</li>
+				<li>Selbstmord begehen um aus einem Rollenspiel herauszukommen, auch wenn man getasert, gefesselt, verhaftet wird oder im Gef&auml;ngnis sitzt.<br/>
+				Wenn im Log steht, dass man nach einer Verhaftung gestorben ist, dann wird man gebannt!</li>
+				<li>Verdoppeln von Gegenst&auml;nden und/oder Geld.<br/>
+				Falls euch jemand am Anfang des Spiels einen viel zu hohen Geldbetrag schickt, meldet es sofort einem Admin.<br/>
+				Ihr sollt euch das Geld selbst erarbeiten.<br/>
+				Wir sprechen nicht von kleinen Starthilfen f&uuml;r Freunde, Schulden oder &Uuml;berweisungen innerhalb von Gangs.</li>
+				<li>Benutzen von gehackten Gegenst&auml;nden.<br/>
+				Ein Hacker kann im Spiel nicht integrierte Gegenst&auml;nde spawnen lassen.<br/>
+				Solltet ihr solche Sachen finden, meldet es und fasst sie nicht an.</li>
+				Falls euch ein Admin beim Hacken erwischt werdet ihr umgehend gebannt.</li>
+				<li>Missbrauch von Bugs oder Spielmechaniken.<br/>
+				Ist irgendwo eine Waffe die sich dupliziert? Dann sagt den Admins Bescheid.<br/>
+				Falls euch ein Admin beim Dupen erwischt werdet ihr umgehend gebannt.</li></ul></ul>
 				"
 		]
 	];
@@ -58,13 +67,16 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Safe Zones",
 				"
-					If bombing (bombing can be intentionally exploding a vehicle), robbing, or killing occurs around these or in these areas it is punishable by ban.<br/><br/>
-					
-					Beim Autospawn (Laden oder Garage)<br/>
-					Waffenladen<br/>
-					Alle Polizei HQs<br/>
-					Alle Rebellautposten<br/>
-					DonatorLaden<br/><br/>
+				In und um die 'Safe Zones' ist das:
+				<ul><li>Herbeif&uuml;hren von Explosionen</li>
+				<li>das Ausrauben oder T&ouml;ten von Mitspielern</li>
+				untersagt und der Verantwortliche wird umgehend gebannt.<br/><br/>
+				<li>Als 'Safe Zones' gelten auch folgende Punkte, wenn auch nicht explizit in der Karte markiert:</li><ul>
+				<li>Fahrzeug-Spawn (Laden oder Garage)</li>
+				<li>Waffenladen</li>
+				<li>Polizei-HQs</li>
+				<li>Rebellen-Outposten</li>
+				<li>Donator-Laden</li></ul>
 				"
 		]
 	];
@@ -72,15 +84,14 @@ player createDiarySubject ["controls","Controls"];
 	
 	player createDiaryRecord ["serverrules",
 		[
-			"Bans für strafbare Handlungen", 
+			"Banns für strafbare Handlungen", 
 				"
-				Es gibt weder eine Verwarnung, noch einen Kick, nur einen Ban für folgende Aktivitäten.<br/><br/>
-				
-				1. Hacken<br/>
-				2. Cheaten<br/>
-				3. Ausnutzung von Spielschwäche (siehe erster Regelpunkt)<br/>
-				4. Umloggen um schnell von einer Stadt in eine andere zu kommen.<br/><br/>
-				5. Nach 3 Kicks, die als Vorwarnung dienen sollten.<br/><br/>
+				F&uuml;r die folgenden Aktivit&auml;ten wird weder eine Verwarnung ausgesprochen noch ein Kick durchgef&uuml;rt sondern sofort gebannt:
+				<ul><li>Hacken</li>
+				<li>Cheaten</li>
+				<li>Ausnutzung von Glitches (siehe erster Regelpunkt)</li>
+				<li>Umloggen, um schnell von einer Stadt in eine andere zu kommen.</li>
+				<li>Nack 3 Kicks, die als <i>Vorwarnung</i> dienen sollten.</li></ul>
 				"
 		]
 	];
@@ -89,11 +100,13 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Einmischung in Polizeiaktionen", 
 				"
-				Der Verstoß gegen die folgenden Punkte führt zum Kick oder Ban, abhängig von der Diskretion des zuständigen Admins.<br/><br/>
-				
-				1. Zivilisten können fürs Öffnen (Hereingucken) von Polizeirucksäcken/-fahrzeugen verhaftet werden. Konstante Wiederholung resultiert in einem Kick.<br/>
-				2. Zivilisten werden fürs dauerhafte Spionieren/Stalken oder Belästigung von Polizisten verhaftet, da sie die Position weitergeben könnten. Da dies auch als Spammen angesehen werden kann, resultiert eine konstante Wiederholung in einem Kick.<br/>
-				3. Die Polizisten aktiv und dauernd davon abzuhalten ihrer Pflicht nachzugehen führt zur Verhaftung. Konstante Wiederholung resultiert in einem Kick.<br/>
+				Der Versto&szlig; gegen die folgenden Punkte f&uuml;hrt zum Kick oder Bann, abh&auml;ngig von der Diskretion des zust&auml;ndigen Admins:
+				<ul><li>Zivilisten k&ouml;nnen f&uuml;rs &Ouml;ffnen (Hereingucken) von/in Polizeirucks&auml;cken/-fahrzeugen verhaftet werden.<br/>
+				Konstante Wiederholung resultiert in einem Kick/Bann.</li>
+				<li>Zivilisten werden f&uuml;rs dauerhafte Spionieren/Stalken oder Bel&auml;stigung von Polizisten verhaftet, da sie die Position weitergeben k&ouml;nnten.<br/>
+				Da dies auch als Spammen angesehen werden kann, resultiert eine konstante Wiederholung in einem Kick/Bann.</li>
+				<li>Die Polizisten aktiv und dauernd davon abzuhalten ihrer Pflicht nachzugehen f&uuml;hrt zur Verhaftung.<br/>
+				Konstante Wiederholung resultiert in einem Kick/Bann.</li></ul>
 				"
 		]
 	];
@@ -102,11 +115,10 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Boote", 
 				"
-				Der Verstoß gegen die folgenden Punkte führt zum Kick oder Ban, abhängig von der Diskretion des zuständigen Admins.<br/><br/>
-				
-				1. Absichtlich Taucher oder Schwimmer überfahren.<br/>
-				2. Stehlen von polizeilichen Schnellbooten um sie zu Crashen, zählt auch zu RDM.<br/>
-				3. Jegliches Glitchen mit Booten ist verboten.<br/><br/>
+				Der Versto&szlig; gegen die folgenden Punkte f&uuml;hrt zum Kick oder Bann, abh&auml;ngig von der Diskretion des zust&auml;ndigen Admins:
+				<ul><li>Absichtlich Taucher oder Schwimmer &uuml;berfahren.</li>
+				<li>Stehlen von Polizei-Schnellbooten um sie zu besch&auml;digen oder zu zerst&ouml;ren. (Z&auml;hlt auch zu RDM!)</li>
+				<li>Jegliches Glitchen mit Booten ist verboten.</li></ul>
 				"
 		]
 	];
@@ -115,13 +127,13 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Luftfahrt", 
 				"
-				Der Verstoß gegen die folgenden Punkte führt zum Kick oder Ban, abhängig von der Diskretion des zuständigen Admins.<br/><br/>
-				
-				1. Hubschrauber mit Absicht kaputt machen oder etwas damit rammen.
-                2. In unter 500 Metern Höhe dauerhaft über Städten kreisen aufgrund von Behinderung der Akustik und der Gefahr in der Stadt zu Crashen.<br/>
-                3. Stehlen von Hubschraubern ohne den Besitzern der Schlüssel Zeit zu geben, diese abzuschließen. Wenn jemand landet und einfach wegrennt ohne abgeschlossen zu haben, ist der Diebstahl natürlich erlaubt.<br/>
-                4. Das Landen auf Hubschrauberplatzen in den Hauptstädten muss bei der Polizei angemeldet werden und auf Rückantwort gewartet werden.<br/><br/>
-                "
+				Der Versto&szlig; gegen die folgenden Punkte f&uuml;hrt zum Kick oder Bann, abh&auml;ngig von der Diskretion des zust&auml;ndigen Admins:
+				<ul><li>Hubschrauber mit Absicht kaputt machen oder etwas damit rammen.</li>
+                		<li>In unter 500 Metern H&ouml;he dauerhaft &uuml;ber St&auml;dten kreisen - wegen L&auml;rmbel&auml;stigung und/oder Gef&auml;hrdung von Personen oder Sachen.</li>
+                		<li>Stehlen von Hubschraubern ohne den Besitzern Zeit zu geben diese abzuschliessen.<br/>
+				Wenn jemand landet und einfach wegrennt ohne abgeschlossen zu haben ist der Diebstahl nat&uuml;rlich erlaubt.</li>
+                		<li>Das Landen auf Hubschrauberpl&auml;tzen in den Hauptst&auml;dten muss bei der Polizei angemeldet werden und auf die Landeerlaubnis gewartet werden.</li></ul>
+                		"
 		]
 	];
 	
@@ -129,14 +141,15 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Autos", 
 				"
-				Der Verstoß gegen die folgenden Punkte führt zum Kick oder Ban, abhängig von der Diskretion des zuständigen Admins.<br/><br/>
-				
-				1.Menschen dürfen nicht überfahren werden. Es gibt Unfälle, trotzdem müssen sowohl Fußgänger als auch Fahrer sich darum bemühen, dass keine entstehen.<br/>
-                2. Sich absichtlich vor Fahrzeuge schmeißen um verletzt oder getötet zu werden.
-                3. Rammen anderer Fahrzeuge. (Kann auch eine Explosion verursachen bei der beide Fahrzeuge komplett kaputt gehen.)<br/>
-                4. Beständig versuchen in ein Auto einzusteigen, um den Besitzer ohne Rollenspiel zu nerven.<br/>
-                5. Ein Fahrzeug stehlen nur um es zu Crashen oder kaputt zu machen.<br/>
-                6. Mehrere Fahrzeuge kaufen um einen der obigen Punkte zu praktizieren.<br/><br/>
+				Der Versto&szlig; gegen die folgenden Punkte f&uuml;hrt zum Kick oder Bann, abh&auml;ngig von der Diskretion des zust&auml;ndigen Admins:
+				<ul><li>Menschen d&uuml;rfen nicht &uuml;berfahren werden.<br/>
+				Es gibt Unf&auml;lle, trotzdem m&uuml;ssen sowohl Fu&szlig;g&auml;nger als auch Fahrer sich darum bem&uuml;hen, dass keine entstehen.</li>
+                		<li>Sich absichtlich vor Fahrzeuge werfen um verletzt oder get&ouml;tet zu werden.</li>
+                		<li>Rammen anderer Fahrzeuge.<br/>
+				Was eine Explosion verursachen und beide Fahrzeuge komplett zerst&ouml;ren kann.</li>
+                		<li>Best&auml;ndig versuchen in ein Auto einzusteigen, um den Besitzer ohne Rollenspiel zu nerven.</li>
+                		<li>Ein Fahrzeug stehlen nur um es zu besch&auml;digen oder zu zerst&ouml;ren.</li>
+                		<li>Mehrere Fahrzeuge kaufen um einen der obigen Punkte zu praktizieren.</li></ul>
 				"
 		]
 	];
@@ -145,33 +158,34 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Kommunikationsregeln", 
 				"
-				Der Verstoß gegen die folgenden Punkte führt zum Kick oder Ban, abhängig von der Diskretion des zuständigen Admins.<br/><br/>
-				
-				Die Missachtung der Regeln in dieser Liste führt zum Entfernen oder Ban des Spielers.
-
-                1. Der globale Chat soll nur für Notfälle oder Warnungen genutzt werden. Der Rest kann per SMS oder direkte Kommunikation geregelt werden.<br/>
-                2. Exzessiver Gebrauch des Globalen Chats resultiert im Kick.<br/>
-                3. Spammen. Egal in welchem Channel.<br/>
-                4. Der Teamspeak ist nicht grundlos aufgeteilt. Die Polizisten müssen immer in ihren Channels bleiben.<br/>
-                5. Zivilisten dürfen sich auf keinen Fall in den Copchannels aufhalten. Diejenigen, die es tun, werden des Channels verwiesen. Sollte das öfter vorkommen kann der Spieler im TS und im Spiel gebant werden.<br/><br/>
+				Der Versto&szlig; gegen die folgenden Punkte f&uuml;hrt zum Kick oder Bann, abh&auml;ngig von der Diskretion des zust&auml;ndigen Admins:
+                		<ul><li>Der globale Chat soll nur für Notf&auml;lle oder Warnungen genutzt werden.<br/>
+				Der Rest kann per SMS oder direkte Kommunikation geregelt werden.</li>
+                		<li>Exzessiver Gebrauch des Globalen Chats resultiert im Kick.</li>
+                		<li>Spammen. Egal in welchem Channel.</li>
+                		<li>Der Teamspeak ist nicht grundlos aufgeteilt.<br/>
+				Die Polizisten m&uuml;ssen immer in ihren Channels bleiben.<br/>
+                		Zivilisten d&uuml;rfen sich auf keinen Fall in den Cop-Channels aufhalten.<br/>
+				Diejenigen, die es tun, werden des Channels verwiesen. (Sollte das &ouml;fter vorkommen kann der Spieler im TS und im Spiel gebannt werden.)</li></ul>
 				"
 		]
 	];
 	
 	player createDiaryRecord ["serverrules",
 		[
-			"Random Deatchmatch (RDM; Wahlloses Töten", 
+			"Random Deatchmatch (RDM - wahlloses T&ouml;ten)", 
 				"
-				Der Verstoß gegen die folgenden Punkte führt zum Kick oder Ban, abhängig von der Diskretion des zuständigen Admins.<br/><br/>
-				
-				Die Missachtung der Regeln in dieser Liste führt zum Entfernen oder Ban des Spielers.<br/>
-
-                1. Jemanden OHNE Rollenspielgrund zu töten ist strengstens untersagt.<br/>
-                2. Das Erklären einer Rebellion ist kein Grund jemanden zu töten, auch nicht Polizisten.<br/>
-                3. Die Polizeibeamten und Rebellen/Zivilisten können nur eine längere Auseinandersetzung mit Waffeneinsatz haben, wenn ein Verbrechen stattgefunden hat, das den Grund dafür bietet.<br/>
-                4. Wenn du nicht an einem Verbrechen/Krieg teilgenommen hast, dann renn weg. Du wirst nicht als *wahllos getötet* gewertet, wenn du am Ort des Verbrechens anwesend bist. Flüchte oder akzeptiere deinen Tod.<br/>
-                5. Selbstverteidigung oder das Verteidigen von Freunden/Gangmitgliedern wird nicht als random deathmatch betrachtet.<br/>
-                6. Jemanden zu ermorden weil er/sie das Geld nicht hergibt, ist nicht nötig und kann als wahlloses töten angesehen werden. Man kann ihn/sie verletzen oder niederschlagen und ausrauben. Das gilt natürlich nicht wenn das eigene Leben in Gefahr ist.sehr situationsabhängig und die Richtigkeit des Vorgehens soll von den Admins beurteilt werden.<br/><br/>
+				Der Versto&szlig; gegen die folgenden Punkte f&uuml;hrt zum Kick oder Bann, abh&auml;ngig von der Diskretion des zust&auml;ndigen Admins:
+                		<ul><li>Jemanden <b>ohne</b> Rollenspielgrund zu t&ouml;ten ist verboten.</li>
+                		<li>Das Erkl&auml;ren einer Rebellion ist kein Grund jemanden zu t&ouml;ten, auch nicht Polizisten.</li>
+                		<li>Die Polizeibeamten und Rebellen/Zivilisten k&ouml;nnen nur eine l&auml;ngere Auseinandersetzung mit Waffeneinsatz haben, wenn ein Verbrechen stattgefunden hat, das den Grund daf&uuml;r bietet.</li>
+                		<li>Wenn du nicht an einem Verbrechen/Krieg teilgenommen hast, dann renn weg.<br/>
+				Du wirst nicht als <b>'wahllos get&ouml;tet'</b> gewertet, wenn du am Ort des Verbrechens anwesend bist.<br/>
+				Fl&uuml;chte oder akzeptiere deinen Tod.</li>
+                		<li>Selbstverteidigung oder das Verteidigen von Freunden/Gangmitgliedern wird <b>nicht</b> als RDM betrachtet.</li>
+                		<li>Jemanden zu ermorden weil er/sie das Geld nicht hergibt, ist nicht n&ouml;tig und kann als RDM angesehen werden.<br/>
+				Man kann ihn/sie verletzen oder niederschlagen und ausrauben.<br/>
+				Das gilt nat&uuml;rlich nicht wenn das eigene Leben in Gefahr ist - sehr situationsabh&auml;ngig und die Richtigkeit des Vorgehens soll von den Admins beurteilt werden.</li></ul>
 				"
 		]
 	];
@@ -179,15 +193,14 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Neues Leben Regel", 
 				"
-				Die Missachtung der Regeln in dieser Liste führt zum Entfernen oder Ban des Spielers.<br/>
-
-                1. Wenn du von einem Polizisten oder einem feindlichen Gangmitglied/Rebell getötet wirst, bist du nicht mehr als polizeilich gesucht gemeldet.<br/>
-                2. Wenn du von jemand anderem getötet wirst, bist du immer noch als gesucht gemeldet.<br/>
-                3. Wenn du stirbst, darfst du dich NICHT rächen.<br/>
-                4. Wenn du wahllos getötet wirst, ist es kein neues Leben, d.h. du darfst Rache üben.<br/>
-                5. Wenn du aus irgendeinem legalen Grund respawn drückst, ist es kein neues Leben.<br/>
-                6. Wenn du verfolgt wirst oder irgendetwas anderes passiert, woraus dein Tod resultiert und die Verursacher Cops/Gangs/Rebellen waren, ist es ein neues Leben.<br/>
-                7. Wenn du dich selbst absichtlich umbringst um aus einer Situation zu entkommen, ist es kein neues Leben.<br/><br/>
+				Die Missachtung der Regeln in dieser Liste f&uuml;hrt zur Entfernung oder Bann des Spielers:
+                		<ul><li>Wenn du von einem Polizisten oder einem feindlichen Gangmitglied/Rebell get&ouml;tet wirst, bist du nicht mehr als <b>'polizeilich gesucht'</b> vermerkt.</li>
+                		<li>Wenn du von jemand anderem get&ouml;tet wirst, bist du immer noch als <b>'polizeilich gesucht'</b> vermerkt.</li>
+                		<li>Wenn du stirbst, darfst du dich <b>nicht</b> r&auml;chen.</li>
+                		<li>Wenn du wahllos get&ouml;tet (RDM) wirst, ist es kein neues Leben, d.h. du <b>darfst</b> Rache &uuml;ben.</li>
+                		<li>Wenn du aus irgendeinem legalen Grund respawn dr&uuml;ckst, ist es kein neues Leben.</li>
+                		<li>Wenn du verfolgt wirst oder irgendetwas anderes passiert, woraus dein Tod resultiert und die Verursacher Cops/Gangs/Rebellen waren, ist es ein neues Leben.</li>
+                		<li>Wenn du dich selbst absichtlich umbringst um aus einer Situation zu entkommen, ist es kein neues Leben.</li></ul>
 				"
 		]
 	];
@@ -196,15 +209,14 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Benehm dich!", 
 				"
-				Die Missachtung der Regeln in dieser Liste führt zum Entfernen oder Ban des Spielers.<br/>
-
-                1. Wenn ein Admin euch sagen muss, dass ihr euch nicht anständig benehmt, dann ist euer Verhalten nicht annehmbar.<br/>
-				2. Beleidigungen sind verboten.<br/>
-				3. Ein Rollenspiel kaputt zu machen ist verboten.<br/>
-				4. Trollen, egal wie, ist verboten.<br/>
-				5. Die Liste geht weiter.<br/>
-				6. Benehmt euch einfach!<br/>
-				7. Die Admins entscheiden, ob euer Verhalten richtig war oder nicht.<br/><br/>
+				Die Missachtung der Regeln in dieser Liste f&uuml;hrt zur Entfernung oder Bann des Spielers:
+                		<ul><li>Wenn ein Admin euch sagen muss, dass ihr euch nicht anst&auml;ndig benehmt, dann ist euer Verhalten nicht annehmbar.</li>
+				<li>Beleidigungen sind verboten.</li>
+				<li>Ein Rollenspiel kaputt zu machen ist verboten.</li>
+				<li>Trollen, egal wie, ist verboten.</li>
+				<li>Die Liste geht weiter...</li>
+				<li>Benehmt euch einfach!</li>
+				<li>Die Admins entscheiden, ob euer Verhalten richtig war oder nicht.</li></ul>
 				"
 		]
 	];

@@ -3981,7 +3981,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="Sandy1";
+							value="Sandy1"; /* Ist das der selbe Wert wie in der TFAR.pbo ? */
 							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
 							typeName="radio_channel_password";
 						};
