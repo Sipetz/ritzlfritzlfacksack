@@ -6481,7 +6481,7 @@
 		</Key>
 		<Key ID="STR_Item_Bottles">
 			<Original>Glass Bottles</Original>
-			<German>Glasflasche</German>
+			<German>Glasflaschen</German>
 		</Key>
 		<Key ID="STR_Item_BottledShine">
 			<Original>Bottled Moonshine</Original>
@@ -6513,7 +6513,7 @@
 		</Key>
 		<Key ID="STR_Item_Mash">
 			<Original>Mash</Original>
-			<German>Mash</German>
+			<German>Meische</German>
 		</Key>
 		<Key ID="STR_Item_Rye">
 			<Original>Rye</Original>
@@ -6533,7 +6533,7 @@
 		</Key>
 		<Key ID="STR_Item_Applej">
 			<Original>Apple juice</Original>
-			<German>Apfelsaft</German>
+			<German>Gemischter Apfelsaft</German>
 		</Key>
 	</Package>
 	<Package name="Life_License">
@@ -6770,7 +6770,7 @@
 		</Key>
 		<Key ID="STR_License_MashL">
 			<Original>Mash License</Original>
-			<German>Mash-Lizenz</German>
+			<German>Meische-Lizenz</German>
 		</Key>
 		<Key ID="STR_License_Liquor">
 			<Original>Liquor License</Original>
@@ -7306,6 +7306,61 @@
 			<Italian>Processando Sale</Italian>
 			<Portuguese>Refinando Sal</Portuguese>
 			<Polish>Warzenie soli</Polish>
+		</Key>
+		<Key ID="STR_Process_Whiskey">
+			<Original>Processing Whiskey</Original>
+			<Czech></Czech>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Whiskey wird verarbeitet</German>
+			<French></French>
+			<Italian></Italian>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+		</Key>
+		<Key ID="STR_Process_Moonshine">
+			<Original>Processing Moonshine</Original>
+			<Czech></Czech>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Moonshine wird verarbeitet</German>
+			<French></French>
+			<Italian></Italian>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+		</Key>
+		<Key ID="STR_Process_Mash">
+			<Original>Processing Mash</Original>
+			<Czech></Czech>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Meische wird verarbeitet</German>
+			<French></French>
+			<Italian></Italian>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+		</Key>
+		<Key ID="STR_Process_Brew_Beer">
+			<Original>Brew Beer</Original>
+			<Czech></Czech>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Bier Brauen</German>
+			<French></French>
+			<Italian></Italian>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+		</Key>
+		<Key ID="STR_Process_Mix_Apple_juice">
+			<Original>Mix Apple juice</Original>
+			<Czech></Czech>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Apfelsaft Mischen</German>
+			<French></French>
+			<Italian></Italian>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
 		</Key>
 		<Key ID="STR_Process_Cocaine">
 			<Original>Processing Coca Leaves</Original>

@@ -8,7 +8,7 @@ class EditorData
 	toggles=129;
 	class ItemIDProvider
 	{
-		nextID=1278;
+		nextID=1223;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3280.9016,4.9794369,12938.015};
-		dir[]={0.48931533,-0.21173382,-0.84614658};
-		up[]={0.10602859,0.97728676,-0.18335};
-		aside[]={-0.86578017,1.1351804e-006,-0.50066692};
+		pos[]={3308.5969,4.1628528,12947.313};
+		dir[]={0.20750232,-0.35528252,0.91147214};
+		up[]={0.078868985,0.93474585,0.34643811};
+		aside[]={0.97508287,1.8416904e-007,-0.22198585};
 	};
 };
 binarizationWanted=0;
@@ -66,8 +66,7 @@ addons[]=
 	"A3_Characters_F_Civil",
 	"A3_Characters_F_OPFOR",
 	"A3_Characters_F_EPC",
-	"pub_c",
-	"A3_Structures_F_Heli_Ind_Machines"
+	"pub_c"
 };
 randomSeed=2639488;
 class ScenarioData
@@ -191,7 +190,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=887;
+		items=886;
 		class Item0
 		{
 			dataType="Marker";
@@ -4942,7 +4941,6 @@ class Mission
 				angles[]={0,3.0901928,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4950,6 +4948,7 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
+			atlOffset=1.1842289;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24333,13 +24332,13 @@ class Mission
 				angles[]={0,2.7419298,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=747;
 			type="Land_CashDesk_F";
+			atlOffset=0.56286049;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24493,13 +24492,13 @@ class Mission
 				angles[]={0,6.0063586,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=751;
 			type="Land_CashDesk_F";
+			atlOffset=0.3939209;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24540,6 +24539,7 @@ class Mission
 			};
 			id=752;
 			type="Land_CashDesk_F";
+			atlOffset=0.18852997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24782,6 +24782,7 @@ class Mission
 			};
 			id=758;
 			type="Land_CashDesk_F";
+			atlOffset=0.19405365;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33700,7 +33701,6 @@ class Mission
 						angles[]={0,0.0679636,6.2826972};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -33708,6 +33708,7 @@ class Mission
 					};
 					id=1008;
 					type="C_man_p_fugitive_F_asia";
+					atlOffset=1.2672386;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34422,7 +34423,6 @@ class Mission
 						angles[]={0,0.53849125,6.2823396};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -34430,6 +34430,7 @@ class Mission
 					};
 					id=1020;
 					type="C_man_1";
+					atlOffset=0.51165199;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36834,7 +36835,6 @@ class Mission
 						angles[]={0,6.1261058,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -36842,6 +36842,7 @@ class Mission
 					};
 					id=1067;
 					type="C_Nikos_aged";
+					atlOffset=0.57194901;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37074,7 +37075,6 @@ class Mission
 						angles[]={0,2.8397205,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -37082,6 +37082,7 @@ class Mission
 					};
 					id=1075;
 					type="C_Nikos_aged";
+					atlOffset=0.42167664;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37142,6 +37143,7 @@ class Mission
 					};
 					id=1077;
 					type="C_Nikos_aged";
+					atlOffset=0.19090271;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37502,6 +37504,7 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
+					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -39312,7 +39315,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3300.8335,2.2881045,12953.786};
+						position[]={3307.1995,2.2661521,12953.729};
 					};
 					side="West";
 					flags=7;
@@ -39322,12 +39325,14 @@ class Mission
 					};
 					id=1176;
 					type="B_Soldier_F";
+					atlOffset=-3.5762787e-006;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1175;
+			atlOffset=-3.5762787e-006;
 		};
 		class Item871
 		{
@@ -39341,7 +39346,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3278.7754,2.0345194,12932.942};
+						position[]={3310.1951,2.1942282,12954.613};
 					};
 					side="Civilian";
 					flags=7;
@@ -39452,19 +39457,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3287.7395,1.899523,12933.866};
+						position[]={3312.3159,2.1344681,12954.52};
 					};
 					side="Civilian";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						skill=0.20000002;
 						init="this allowDamage false; this enableSimulation false; this addAction [ ""Brew Beer"", { [[[""hops"",1],[""yeast"",1],[""waterbottle"",1]],""license_civ_liquor"",50000,[[""beerp"",1],[""AItem:>"",3]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""liquor"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""liquor"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""liquor"",0,false,false,"""""""",' !license_civ_liquor && playerSide == civilian ']; this addAction [ ""Mix Apple juice"", { [[[""apple"",1],[""waterbottle"",1]],""license_civ_liquor"",50000,[[""applej"",1],[""AItem:>"",2]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""liquor"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""liquor"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""liquor"",0,false,false,"""""""",' !license_civ_liquor && playerSide == civilian '];";
-						name="Brauerei1";
+						name="Brauerei";
 					};
 					id=1187;
 					type="C_man_p_fugitive_F_afro";
-					atlOffset=1.267942;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -39551,7 +39555,6 @@ class Mission
 			{
 			};
 			id=1186;
-			atlOffset=1.267942;
 		};
 		class Item873
 		{
@@ -39565,7 +39568,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3302.426,2.0377653,12934.338};
+						position[]={3315.0371,2.1217628,12955.069};
 					};
 					side="Civilian";
 					flags=7;
@@ -39595,7 +39598,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3310.7695,2.0383098,12935.916};
+						position[]={3318.0251,2.1073282,12955.266};
 					};
 					side="Civilian";
 					flags=7;
@@ -39765,7 +39768,7 @@ class Mission
 		class Item879
 		{
 			dataType="Marker";
-			position[]={3278.7063,2.0360103,12931.081};
+			position[]={3310.1697,2.1987705,12955.881};
 			name="Brennerei";
 			text="@STR_MAR_Brennerei";
 			type="mil_box";
@@ -39775,7 +39778,7 @@ class Mission
 		class Item880
 		{
 			dataType="Marker";
-			position[]={3287.7788,0.61045837,12932.108};
+			position[]={3312.3376,2.1552408,12955.878};
 			name="Brauerei";
 			text="@STR_MAR_Brauerei";
 			type="mil_box";
@@ -39785,7 +39788,7 @@ class Mission
 		class Item881
 		{
 			dataType="Marker";
-			position[]={3302.3459,2.0340996,12935.636};
+			position[]={3314.957,2.158478,12956.367};
 			name="Abfueller";
 			text="@STR_MAR_Abfueller";
 			type="mil_box";
@@ -39795,7 +39798,7 @@ class Mission
 		class Item882
 		{
 			dataType="Marker";
-			position[]={3310.637,2.0349951,12937.127};
+			position[]={3317.8926,2.1420717,12956.477};
 			name="MrMoonshine";
 			text="@STR_Shops_MRMoonshine";
 			type="mil_box";
@@ -39834,36 +39837,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3278.8298,2.7230623,12929.786};
-				angles[]={0.0016194459,0,0};
+				position[]={3309.9751,2.8658342,12951.063};
+				angles[]={6.2765183,0,6.2551899};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction [localize""STR_Process_Mash"", { [[[""cornmeal"",1],[""waterbottle"",1]],""license_civ_mashL"",50000,[[""mash"",1],[""AItem:>"",2]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mashL"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mashL"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mashL"",0,false,false,"""""""",' !license_civ_mashL && playerSide == civilian '];this addAction [localize""STR_Process_Moonshine"", { [[[""mash"",1],[""yeast"",1]],""license_civ_MoonshineL"",50000,[[""Moonshine"",1],[""AItem:>"",2]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""MoonshineL"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""MoonshineL"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""MoonshineL"",0,false,false,"""""""",' !license_civ_MoonshineL && playerSide == civilian '];this addAction [localize""STR_Process_Whiskey"", { [[[""rye"",1],[""yeast"",1],[""waterbottle"",1]],""license_civ_WhiskeyL"",50000,[[""whiskey"",1],[""AItem:>"",3]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""WhiskeyL"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""WhiskeyL"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""WhiskeyL"",0,false,false,"""",' !license_civ_WhiskeyL && playerSide == civilian '];";
+				init="this allowDamage false; this enableSimulation false; this addAction [ ""Process Mash"", { [[[""cornmeal"",1],[""waterbottle"",1]],""license_civ_mashL"",50000,[[""mash"",1],[""AItem:>"",2]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mashL"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mashL"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mashL"",0,false,false,"""""""",' !license_civ_mashL && playerSide == civilian '];this addAction [ ""Process Moonshine"", { [[[""mash"",1],[""yeast"",1]],""license_civ_MoonshineL"",50000,[[""Moonshine"",1],[""AItem:>"",2]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""MoonshineL"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""MoonshineL"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""MoonshineL"",0,false,false,"""""""",' !license_civ_MoonshineL && playerSide == civilian '];this addAction [ ""Process Whiskey"", { [[[""rye"",1],[""yeast"",1],[""waterbottle"",1]],""license_civ_WhiskeyL"",50000,[[""whiskey"",1],[""AItem:>"",3]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""WhiskeyL"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""WhiskeyL"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""WhiskeyL"",0,false,false,"""",' !license_civ_WhiskeyL && playerSide == civilian '];";
 				name="Brennerei";
 			};
 			id=1221;
 			type="Land_WaterTank_F";
-		};
-		class Item886
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3287.8191,2.6239176,12930.751};
-				angles[]={0.0016194459,0,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false; this addAction [localize""STR_Process_Brew_Beer"", { [[[""hops"",1],[""yeast"",1],[""waterbottle"",1]],""license_civ_liquor"",50000,[[""beerp"",1],[""AItem:>"",3]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""liquor"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""liquor"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""liquor"",0,false,false,"""""""",' !license_civ_liquor && playerSide == civilian ']; this addAction [localize""STR_Process_Mix_Apple_juice"", { [[[""apple"",1],[""waterbottle"",1]],""license_civ_liquor"",50000,[[""applej"",1],[""AItem:>"",2]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""liquor"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""liquor"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""liquor"",0,false,false,"""""""",' !license_civ_liquor && playerSide == civilian '];";
-				name="Brauerei";
-			};
-			id=1268;
-			type="Land_PressureWasher_01_F";
-			atlOffset=1.4481211;
+			atlOffset=2.3841858e-007;
 		};
 	};
 };
