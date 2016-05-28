@@ -7,6 +7,33 @@
 	All survival? things merged into one thread.
 */
 private["_fnc_food","_fnc_water","_foodTime","_waterTime","_bp","_walkDis","_lastPos","_curPos"];
+
+	//TFAR - Task Force Radio - ChannelCheck:
+	[] spawn
+	{
+		private["_ChannelName","_ServerName","_isTeamSpeakPluginEnabled"];
+		sleep 15;
+		while{true}do
+		{
+			_ChannelName = call TFAR_fnc_getTeamSpeakChannelName;
+			_ServerName = call TFAR_fnc_getTeamSpeakServerName;
+			_isTeamSpeakPluginEnabled = call TFAR_fnc_isTeamSpeakPluginEnabled;
+
+			_DarfNixSehen = false;
+			_IstAdmin = ((call life_adminlevel) > 0);
+			_WhiteListedChannels = ["TaskForceRadio"];
+
+			if(!_IstAdmin && _ServerName != "Sipetz & Friends" )then{_DarfNixSehen = true;};
+			if(!_IstAdmin && !(_ChannelName in _WhiteListedChannels))then{_DarfNixSehen = true;};
+			if(!_IstAdmin && !_isTeamSpeakPluginEnabled)then{_DarfNixSehen = true;};
+
+			if(_DarfNixSehen) then{cutText["Falscher Channel/Server oder Plugin Disabled","BLACK FADED"];}
+			else{cutText ["","PLAIN"];};
+			sleep 3;
+		};
+	}; 	
+
+
 _fnc_food =  {
 	if(life_hunger < 2) then {player setDamage 1; hint localize "STR_NOTF_EatMSG_Death";}
 	else
@@ -136,5 +163,5 @@ for "_i" from 0 to 1 step 0 do {
 	uiSleep 1;
 };
 	
-	
+
 	
