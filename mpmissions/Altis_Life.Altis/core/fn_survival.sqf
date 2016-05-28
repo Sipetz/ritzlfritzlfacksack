@@ -117,30 +117,6 @@ for "_i" from 0 to 1 step 0 do {
 		};
 	};
 	
-	//TFAR - Task Force Radio - ChannelCheck:
-[] spawn
-{
-private["_ChannelName","_ServerName","_isTeamSpeakPluginEnabled"];
-sleep 15;
-while{true}do
-{
-_ChannelName = call TFAR_fnc_getTeamSpeakChannelName;
-_ServerName = call TFAR_fnc_getTeamSpeakServerName;
-_isTeamSpeakPluginEnabled = call TFAR_fnc_isTeamSpeakPluginEnabled;
-	
-_DarfNixSehen = false;
-_IstAdmin = ((call life_adminlevel) > 0);
-_WhiteListedChannels = ["TaskForceRadio"];
-	
-if(!_IstAdmin && _ServerName != "Sipetz & Friends" )then{_DarfNixSehen = true;};
-if(!_IstAdmin && !(_ChannelName in _WhiteListedChannels))then{_DarfNixSehen = true;};
-if(!_IstAdmin && !_isTeamSpeakPluginEnabled)then{_DarfNixSehen = true;};
-	
-if(_DarfNixSehen) then{cutText["Falscher Channel/Server oder Plugin Disabled","BLACK FADED"];}
-else{cutText ["","PLAIN"];};
-sleep 3;
-}; 
-	
 	/* Travelling distance to decrease thirst/hunger which is captured every second so the distance is actually greater then 650 */
 	if(!alive player) then {_walkDis = 0;} else {
 		_curPos = visiblePosition player;
