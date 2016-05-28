@@ -49,7 +49,6 @@ life_civ_position = [];
 life_markers = false;
 life_TankLaster = 1;
 life_drink = 0; //Moonshine
-life_drink = 0;
 life_drug = 0;
 
 //Settings

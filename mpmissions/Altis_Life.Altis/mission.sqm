@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=129;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1278;
+		nextID=1279;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3280.9016,4.9794369,12938.015};
-		dir[]={0.48931533,-0.21173382,-0.84614658};
-		up[]={0.10602859,0.97728676,-0.18335};
-		aside[]={-0.86578017,1.1351804e-006,-0.50066692};
+		pos[]={3300.1421,6.9662743,12939.573};
+		dir[]={0.40154037,-0.36478436,-0.84009212};
+		up[]={0.15731698,0.93107927,-0.32913417};
+		aside[]={-0.90225524,-3.8516009e-007,-0.43125707};
 	};
 };
 binarizationWanted=0;
@@ -66,8 +66,8 @@ addons[]=
 	"A3_Characters_F_Civil",
 	"A3_Characters_F_OPFOR",
 	"A3_Characters_F_EPC",
-	"pub_c",
-	"A3_Structures_F_Heli_Ind_Machines"
+	"A3_Structures_F_Heli_Ind_Machines",
+	"task_force_radio_items"
 };
 randomSeed=2639488;
 class ScenarioData
@@ -4942,7 +4942,6 @@ class Mission
 				angles[]={0,3.0901928,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4950,6 +4949,7 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
+			atlOffset=1.1842289;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24333,13 +24333,13 @@ class Mission
 				angles[]={0,2.7419298,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=747;
 			type="Land_CashDesk_F";
+			atlOffset=0.56286049;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24493,13 +24493,13 @@ class Mission
 				angles[]={0,6.0063586,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=751;
 			type="Land_CashDesk_F";
+			atlOffset=0.3939209;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24540,6 +24540,7 @@ class Mission
 			};
 			id=752;
 			type="Land_CashDesk_F";
+			atlOffset=0.18852997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24782,6 +24783,7 @@ class Mission
 			};
 			id=758;
 			type="Land_CashDesk_F";
+			atlOffset=0.19405365;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33700,7 +33702,6 @@ class Mission
 						angles[]={0,0.0679636,6.2826972};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -33708,6 +33709,7 @@ class Mission
 					};
 					id=1008;
 					type="C_man_p_fugitive_F_asia";
+					atlOffset=1.2672386;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34422,7 +34424,6 @@ class Mission
 						angles[]={0,0.53849125,6.2823396};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -34430,6 +34431,7 @@ class Mission
 					};
 					id=1020;
 					type="C_man_1";
+					atlOffset=0.51165199;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36834,7 +36836,6 @@ class Mission
 						angles[]={0,6.1261058,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -36842,6 +36843,7 @@ class Mission
 					};
 					id=1067;
 					type="C_Nikos_aged";
+					atlOffset=0.57194901;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37074,7 +37076,6 @@ class Mission
 						angles[]={0,2.8397205,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -37082,6 +37083,7 @@ class Mission
 					};
 					id=1075;
 					type="C_Nikos_aged";
+					atlOffset=0.42167664;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37142,6 +37144,7 @@ class Mission
 					};
 					id=1077;
 					type="C_Nikos_aged";
+					atlOffset=0.19090271;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37502,6 +37505,7 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
+					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -39452,10 +39456,10 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3287.7395,1.899523,12933.866};
+						position[]={3287.6099,2.0354965,12933.606};
 					};
 					side="Civilian";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						skill=0.20000002;
@@ -39464,7 +39468,6 @@ class Mission
 					};
 					id=1187;
 					type="C_man_p_fugitive_F_afro";
-					atlOffset=1.267942;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -39551,7 +39554,6 @@ class Mission
 			{
 			};
 			id=1186;
-			atlOffset=1.267942;
 		};
 		class Item873
 		{
@@ -39668,7 +39670,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3636.9424,11.590837,13120.852};
+						position[]={3636.3569,10.108952,13120.886};
 						angles[]={0,1.4954207,0};
 					};
 					side="Civilian";
@@ -39817,24 +39819,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3638.9456,14.707481,13119.162};
-				angles[]={0,3.2463124,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-			};
-			id=1204;
-			type="Land_Pub_C";
-			atlOffset=2.2997656;
-		};
-		class Item885
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3278.8298,2.7230623,12929.786};
+				position[]={3278.8298,2.7230625,12929.786};
 				angles[]={0.0016194459,0,0};
 			};
 			side="Empty";
@@ -39846,8 +39831,9 @@ class Mission
 			};
 			id=1221;
 			type="Land_WaterTank_F";
+			atlOffset=0.24585819;
 		};
-		class Item886
+		class Item885
 		{
 			dataType="Object";
 			class PositionInfo
@@ -39856,6 +39842,7 @@ class Mission
 				angles[]={0.0016194459,0,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction [localize""STR_Process_Brew_Beer"", { [[[""hops"",1],[""yeast"",1],[""waterbottle"",1]],""license_civ_liquor"",50000,[[""beerp"",1],[""AItem:>"",3]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""liquor"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""liquor"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""liquor"",0,false,false,"""""""",' !license_civ_liquor && playerSide == civilian ']; this addAction [localize""STR_Process_Mix_Apple_juice"", { [[[""apple"",1],[""waterbottle"",1]],""license_civ_liquor"",50000,[[""applej"",1],[""AItem:>"",2]]] spawn life_fnc_dynprocess; } ]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""liquor"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""liquor"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""liquor"",0,false,false,"""""""",' !license_civ_liquor && playerSide == civilian '];";
@@ -39863,7 +39850,155 @@ class Mission
 			};
 			id=1268;
 			type="Land_PressureWasher_01_F";
-			atlOffset=1.4481211;
+			atlOffset=0.061526537;
+		};
+		class Item886
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8534.9023,103.50265,25155.363};
+				angles[]={0.10626435,0,6.1650715};
+			};
+			id=1278;
+			type="tfar_ModuleTaskForceRadioEnforceUsage";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_password";
+					expression="_this setVariable ['radio_channel_password',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Sandymaus1";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_RiflemanRadio";
+					expression="_this setVariable ['RiflemanRadio',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_name";
+					expression="_this setVariable ['radio_channel_name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TaskForceRadio";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_same_sw_frequencies_for_side";
+					expression="_this setVariable ['same_sw_frequencies_for_side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_TeamLeaderRadio";
+					expression="_this setVariable ['TeamLeaderRadio',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
+					expression="_this setVariable ['same_lr_frequencies_for_side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
+					expression="_this setVariable ['terrain_interception_coefficient',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=7;
+						};
+					};
+				};
+				nAttributes=7;
+			};
 		};
 	};
 };
