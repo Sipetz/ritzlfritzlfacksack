@@ -27,3 +27,4 @@
 #include "compensate.hpp"
 #include "FuelStat.hpp"
 #include "AltisPhone.hpp"
+#include "placeables.hpp" //Maxi Cop objects

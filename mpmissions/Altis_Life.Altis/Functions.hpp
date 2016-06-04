@@ -137,6 +137,16 @@ class Life_Client_Core {
 		class breathalyzer {};
 		class alkoholdrugtester {};
 	};
+	
+	class CopPlaceables	{
+		file = "core\cop\placeables";
+		class placeablesInit {};
+		class placeablesMenu {};
+		class placeablesRemoveAll {};
+		class placeablePlace {};
+		class placeableCancel {};
+		class placeablesPlaceComplete {};
+	};
 
 	class Dialog_Controls {
 		file = "dialog\function";

@@ -372,4 +372,14 @@ switch (_code) do {
 	};
 };
 
+if (life_barrier_active) then {
+	switch (_code) do {
+		//space key
+		case 57: {
+			[] spawn life_fnc_placeablesPlaceComplete;
+		};
+	};
+	true;
+};
+	
 _handled;
