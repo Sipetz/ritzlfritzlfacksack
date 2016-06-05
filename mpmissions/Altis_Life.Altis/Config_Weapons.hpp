@@ -219,7 +219,7 @@ class WeaponShops {
             { "FirstAidKit", "", 150, 65 },
 			{ "Medikit", "", 500, 450 },
             { "NVGoggles", "", 1200, 980 },
-			{ "tf_anprc154", "Funk", 2000, 980 },
+			{ "tf_anprc148jem", "Funk", 2000, 980 },
         };
         mags[] = {};
         accs[] = {};

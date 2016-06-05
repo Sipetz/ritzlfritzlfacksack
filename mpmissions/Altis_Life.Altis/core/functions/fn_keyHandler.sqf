@@ -246,7 +246,7 @@ switch (_code) do {
 			};
 
 			if(_veh isKindOf "House_F" && {playerSide == civilian}) then {
-				if(_veh in life_vehicles && player distance _veh < 8) then {
+				if(_veh in life_vehicles && player distance _veh < 16) then {
 					_door = [_veh] call life_fnc_nearestDoor;
 					if(EQUAL(_door,0)) exitWith {hint localize "STR_House_Door_NotNear"};
 					_locked = _veh GVAR [format["bis_disabled_Door_%1",_door],0];

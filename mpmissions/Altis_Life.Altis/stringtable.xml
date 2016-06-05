@@ -2215,7 +2215,7 @@
 			<Czech>synchronizace dat</Czech>
 			<Spanish>Sincronizar</Spanish>
 			<Russian></Russian>
-			<German>Daten speichern</German>
+			<German>speichern</German>
 			<French>Sync Data</French>
 			<Italian>Salva Dati</Italian>
 			<Portuguese>Sincronizar Dados</Portuguese>
@@ -2485,7 +2485,7 @@
 			<Czech>Pay vstupenek</Czech>
 			<Spanish>Pagar Tiquete</Spanish>
 			<Russian></Russian>
-			<German>Ticket bezahlen</German>
+			<German>bezahlen</German>
 			<French>Payer l'amende</French>
 			<Italian>Paga Multa</Italian>
 			<Portuguese>Pagar Multa</Portuguese>
@@ -2496,7 +2496,7 @@
 			<Czech>odmítnout Ticket</Czech>
 			<Spanish>Denegar Tiquete</Spanish>
 			<Russian></Russian>
-			<German>Ticket ablehnen</German>
+			<German>ablehnen</German>
 			<French>Contester l'amende</French>
 			<Italian>Rifiuta Multa</Italian>
 			<Portuguese>Recusar Multa</Portuguese>

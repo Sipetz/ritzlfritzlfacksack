@@ -1,15 +1,14 @@
 waitUntil {!isNull player && player == player};
-if(player diarySubjectExists "controls") exitWith {};
+if(player diarySubjectExists "rules")exitwith{};
 
-player createDiarySubject ["credits","Credits"];
 player createDiarySubject ["changelog","Change Log"];
-player createDiarySubject ["serverrules","General Rules"];
-player createDiarySubject ["policerules","Police Procedures/Rules"];
-player createDiarySubject ["safezones","Safe Zones (No Killing)"];
-//player createDiarySubject ["civrules","Civilian Rules"];
-player createDiarySubject ["illegalitems","Illegal Activity"];
-//player createDiarySubject ["gangrules","Gang Rules"];
-//player createDiarySubject ["terrorrules","Terrorism Rules"];
+player createDiarySubject ["serverrules","Haupptregeln Rules"];
+player createDiarySubject ["policerules","Polizeiregeln"];
+player createDiarySubject ["safezones","Safe Zones (Nicht killen)"];
+//player createDiarySubject ["civrules","Zivilisten Regeln"];
+player createDiarySubject ["illegalitems","Ilegale aktivitäten"];
+//player createDiarySubject ["gangrules","Gangregeln"];
+//player createDiarySubject ["terrorrules","Terrorregeln"];
 player createDiarySubject ["controls","Controls"];
 
 /*  Example
@@ -17,228 +16,213 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"", //Subsection
 				"
-					TEXT HERE<br/><br/>
+				TEXT HERE<br/><br/>
 				"
 		]
 	];
 */
-
-	player createDiaryRecord ["credits",
+	player createDiaryRecord["changelog",
 		[
-			"ArmaLife",
+			"Official Change Log",
 				"
-					ArmaLife is a GitHub project which aims to update and keep adding new features to the original 'Altis Life RPG' by Tonic.<br/><br/>
+					Die offizielle Changelog finden Sie auf den BIS Foren (Suche Altis Life RPG) zu finden
 				"
 		]
 	];
-
+	
 	player createDiaryRecord["changelog",
 		[
-			"Altis Life Change Log",
+			"Custom Change Log",
 				"
-					The official changelog can be found in ArmaLife github. https://git.io/vVkhe<br/><br/>
-
-					v4.4 release 2!<br/>
-					by: danielstuart14<br/>
-					date: 20. March 2016<br/><br/>
-
-					v4.4 release 1!<br/>
-					by: danielstuart14<br/>
-					date: 12. February 2016<br/><br/>
-
-					v4.3 release 4!<br/>
-					by: danielstuart14<br/>
-					date: 31. January 2016<br/><br/>
-
-					v4.3 release 3!<br/>
-					by: danielstuart14<br/>
-					date: Not released<br/><br/>
-
-					v4.3 release 2!<br/>
-					by: danielstuart14<br/>
-					date: 22. January 2016<br/><br/>
-
-					v4.3 release 1!<br/>
-					by: danielstuart14<br/>
-					date: 19. January 2016<br/><br/>
-				"
-		]
-	];
-
-	player createDiaryRecord["changelog",
-		[
-			"Server Change Log",
-				"
-					This section is meant for people doing their own edits to the mission, DO NOT REMOVE THE ABOVE.<br/><br/>
+					Dieser Abschnitt ist für Menschen gedacht, die Änderungen an der Mission ist nicht erlaubt.
 				"
 		]
 	];
 
 		player createDiaryRecord ["serverrules",
 		[
-			"Exploits",
+			"Exploits", 
 				"
-				These are considered exploits, and you will not be kicked, but banned.<br/><br/>
-
-				1. Getting out of jail via any method other than paying bail or escaping via helicopter.<br/>
-				2. Killing yourself to get out of roleplay. Getting out of being tazed, restrained, arrested, jail, etc. If the log shows you got arrested, then you died, you will be banned. Do not pay bail and kill yourself for an easy ride home. Walk you lazy turd.<br/>
-				3. Duping items and/or money. If someone sends you an unobtainable amount of money right at the start of the game, report to an admin IMMEDIATELY and transfer said money to an admin. Do this ASAP or an admin could ban you if they see that much on you without question.<br/>
-				4. Using clearly hacked items. If a hacker comes in and spawns unobtainable items, you could be banned for using said items. Report the items to the admins immediately and stay away from them.<br/>
-				5. Abusing bugs or game mechanics for gain. Is there a replicating gun somewhere? Report it and leave it alone. If an admin catches you abusing the glitch, ban.<br/><br/>
+				<ul><li>Die Ausnutzung von Exploits ist verboten - man wird deswegen jedoch nicht gekickt.</li><br/>
+				<li>Weitere Verbote - <b>mit Bann</b>: (Beispiele)</li><ul>
+				<li>Durch Glitches aus dem Gef&auml;ngnis entkommen (mit Hubschrauber fliehen ist erlaubt).</li>
+				<li>Selbstmord begehen um aus einem Rollenspiel herauszukommen, auch wenn man getasert, gefesselt, verhaftet wird oder im Gef&auml;ngnis sitzt.<br/>
+				Wenn im Log steht, dass man nach einer Verhaftung gestorben ist, dann wird man gebannt!</li>
+				<li>Verdoppeln von Gegenst&auml;nden und/oder Geld.<br/>
+				Falls euch jemand am Anfang des Spiels einen viel zu hohen Geldbetrag schickt, meldet es sofort einem Admin.<br/>
+				Ihr sollt euch das Geld selbst erarbeiten.<br/>
+				Wir sprechen nicht von kleinen Starthilfen f&uuml;r Freunde, Schulden oder &Uuml;berweisungen innerhalb von Gangs.</li>
+				<li>Benutzen von gehackten Gegenst&auml;nden.<br/>
+				Ein Hacker kann im Spiel nicht integrierte Gegenst&auml;nde spawnen lassen.<br/>
+				Solltet ihr solche Sachen finden, meldet es und fasst sie nicht an.</li>
+				Falls euch ein Admin beim Hacken erwischt werdet ihr umgehend gebannt.</li>
+				<li>Missbrauch von Bugs oder Spielmechaniken.<br/>
+				Ist irgendwo eine Waffe die sich dupliziert? Dann sagt den Admins Bescheid.<br/>
+				Falls euch ein Admin beim Dupen erwischt werdet ihr umgehend gebannt.</li></ul></ul>
 				"
 		]
 	];
-
+	
 	player createDiaryRecord["safezones",
 		[
 			"Safe Zones",
 				"
-					If bombing (bombing can be intentionally exploding a vehicle), robbing, or killing occurs around these or in these areas it is punishable by ban.<br/><br/>
-
-					Any vehicle spawn (shop or garage)<br/>
-					Any weapon shop<br/>
-					All Police HQs<br/>
-					Rebel Outposts<br/>
-					Donator Shops<br/><br/>
+				In und um die 'Safe Zones' ist das:
+				<ul><li>Herbeif&uuml;hren von Explosionen</li>
+				<li>das Ausrauben oder T&ouml;ten von Mitspielern</li>
+				untersagt und der Verantwortliche wird umgehend gebannt.<br/><br/>
+				<li>Als 'Safe Zones' gelten auch folgende Punkte, wenn auch nicht explizit in der Karte markiert:</li><ul>
+				<li>Fahrzeug-Spawn (Laden oder Garage)</li>
+				<li>Waffenladen</li>
+				<li>Polizei-HQs</li>
+				<li>Rebellen-Outposten</li>
+				<li>Donator-Laden</li></ul>
 				"
 		]
 	];
-
+					
+	
+	player createDiaryRecord ["serverrules",
+		[
+			"Banns für strafbare Handlungen", 
+				"
+				F&uuml;r die folgenden Aktivit&auml;ten wird weder eine Verwarnung ausgesprochen noch ein Kick durchgef&uuml;rt sondern sofort gebannt:
+				<ul><li>Hacken</li>
+				<li>Cheaten</li>
+				<li>Ausnutzung von Glitches (siehe erster Regelpunkt)</li>
+				<li>Umloggen, um schnell von einer Stadt in eine andere zu kommen.</li>
+				<li>Nack 3 Kicks, die als <i>Vorwarnung</i> dienen sollten.</li></ul>
+				"
+		]
+	];
+	
+	player createDiaryRecord ["serverrules",
+		[
+			"Einmischung in Polizeiaktionen", 
+				"
+				Der Versto&szlig; gegen die folgenden Punkte f&uuml;hrt zum Kick oder Bann, abh&auml;ngig von der Diskretion des zust&auml;ndigen Admins:
+				<ul><li>Zivilisten k&ouml;nnen f&uuml;rs &Ouml;ffnen (Hereingucken) von/in Polizeirucks&auml;cken/-fahrzeugen verhaftet werden.<br/>
+				Konstante Wiederholung resultiert in einem Kick/Bann.</li>
+				<li>Zivilisten werden f&uuml;rs dauerhafte Spionieren/Stalken oder Bel&auml;stigung von Polizisten verhaftet, da sie die Position weitergeben k&ouml;nnten.<br/>
+				Da dies auch als Spammen angesehen werden kann, resultiert eine konstante Wiederholung in einem Kick/Bann.</li>
+				<li>Die Polizisten aktiv und dauernd davon abzuhalten ihrer Pflicht nachzugehen f&uuml;hrt zur Verhaftung.<br/>
+				Konstante Wiederholung resultiert in einem Kick/Bann.</li></ul>
+				"
+		]
+	];
+	
+	player createDiaryRecord ["serverrules",
+		[
+			"Boote", 
+				"
+				Der Versto&szlig; gegen die folgenden Punkte f&uuml;hrt zum Kick oder Bann, abh&auml;ngig von der Diskretion des zust&auml;ndigen Admins:
+				<ul><li>Absichtlich Taucher oder Schwimmer &uuml;berfahren.</li>
+				<li>Stehlen von Polizei-Schnellbooten um sie zu besch&auml;digen oder zu zerst&ouml;ren. (Z&auml;hlt auch zu RDM!)</li>
+				<li>Jegliches Glitchen mit Booten ist verboten.</li></ul>
+				"
+		]
+	];
+	
+	player createDiaryRecord ["serverrules",
+		[
+			"Luftfahrt", 
+				"
+				Der Versto&szlig; gegen die folgenden Punkte f&uuml;hrt zum Kick oder Bann, abh&auml;ngig von der Diskretion des zust&auml;ndigen Admins:
+				<ul><li>Hubschrauber mit Absicht kaputt machen oder etwas damit rammen.</li>
+                		<li>In unter 500 Metern H&ouml;he dauerhaft &uuml;ber St&auml;dten kreisen - wegen L&auml;rmbel&auml;stigung und/oder Gef&auml;hrdung von Personen oder Sachen.</li>
+                		<li>Stehlen von Hubschraubern ohne den Besitzern Zeit zu geben diese abzuschliessen.<br/>
+				Wenn jemand landet und einfach wegrennt ohne abgeschlossen zu haben ist der Diebstahl nat&uuml;rlich erlaubt.</li>
+                		<li>Das Landen auf Hubschrauberpl&auml;tzen in den Hauptst&auml;dten muss bei der Polizei angemeldet werden und auf die Landeerlaubnis gewartet werden.</li></ul>
+                		"
+		]
+	];
+	
+	player createDiaryRecord ["serverrules",
+		[
+			"Autos", 
+				"
+				Der Versto&szlig; gegen die folgenden Punkte f&uuml;hrt zum Kick oder Bann, abh&auml;ngig von der Diskretion des zust&auml;ndigen Admins:
+				<ul><li>Menschen d&uuml;rfen nicht &uuml;berfahren werden.<br/>
+				Es gibt Unf&auml;lle, trotzdem m&uuml;ssen sowohl Fu&szlig;g&auml;nger als auch Fahrer sich darum bem&uuml;hen, dass keine entstehen.</li>
+                		<li>Sich absichtlich vor Fahrzeuge werfen um verletzt oder get&ouml;tet zu werden.</li>
+                		<li>Rammen anderer Fahrzeuge.<br/>
+				Was eine Explosion verursachen und beide Fahrzeuge komplett zerst&ouml;ren kann.</li>
+                		<li>Best&auml;ndig versuchen in ein Auto einzusteigen, um den Besitzer ohne Rollenspiel zu nerven.</li>
+                		<li>Ein Fahrzeug stehlen nur um es zu besch&auml;digen oder zu zerst&ouml;ren.</li>
+                		<li>Mehrere Fahrzeuge kaufen um einen der obigen Punkte zu praktizieren.</li></ul>
+				"
+		]
+	];
+	
+	player createDiaryRecord ["serverrules",
+		[
+			"Kommunikationsregeln", 
+				"
+				Der Versto&szlig; gegen die folgenden Punkte f&uuml;hrt zum Kick oder Bann, abh&auml;ngig von der Diskretion des zust&auml;ndigen Admins:
+                		<ul><li>Der globale Chat soll nur für Notf&auml;lle oder Warnungen genutzt werden.<br/>
+				Der Rest kann per SMS oder direkte Kommunikation geregelt werden.</li>
+                		<li>Exzessiver Gebrauch des Globalen Chats resultiert im Kick.</li>
+                		<li>Spammen. Egal in welchem Channel.</li>
+                		<li>Der Teamspeak ist nicht grundlos aufgeteilt.<br/>
+				Die Polizisten m&uuml;ssen immer in ihren Channels bleiben.<br/>
+                		Zivilisten d&uuml;rfen sich auf keinen Fall in den Cop-Channels aufhalten.<br/>
+				Diejenigen, die es tun, werden des Channels verwiesen. (Sollte das &ouml;fter vorkommen kann der Spieler im TS und im Spiel gebannt werden.)</li></ul>
+				"
+		]
+	];
+	
+	player createDiaryRecord ["serverrules",
+		[
+			"Random Deatchmatch (RDM - wahlloses T&ouml;ten)", 
+				"
+				Der Versto&szlig; gegen die folgenden Punkte f&uuml;hrt zum Kick oder Bann, abh&auml;ngig von der Diskretion des zust&auml;ndigen Admins:
+                		<ul><li>Jemanden <b>ohne</b> Rollenspielgrund zu t&ouml;ten ist verboten.</li>
+                		<li>Das Erkl&auml;ren einer Rebellion ist kein Grund jemanden zu t&ouml;ten, auch nicht Polizisten.</li>
+                		<li>Die Polizeibeamten und Rebellen/Zivilisten k&ouml;nnen nur eine l&auml;ngere Auseinandersetzung mit Waffeneinsatz haben, wenn ein Verbrechen stattgefunden hat, das den Grund daf&uuml;r bietet.</li>
+                		<li>Wenn du nicht an einem Verbrechen/Krieg teilgenommen hast, dann renn weg.<br/>
+				Du wirst nicht als <b>'wahllos get&ouml;tet'</b> gewertet, wenn du am Ort des Verbrechens anwesend bist.<br/>
+				Fl&uuml;chte oder akzeptiere deinen Tod.</li>
+                		<li>Selbstverteidigung oder das Verteidigen von Freunden/Gangmitgliedern wird <b>nicht</b> als RDM betrachtet.</li>
+                		<li>Jemanden zu ermorden weil er/sie das Geld nicht hergibt, ist nicht n&ouml;tig und kann als RDM angesehen werden.<br/>
+				Man kann ihn/sie verletzen oder niederschlagen und ausrauben.<br/>
+				Das gilt nat&uuml;rlich nicht wenn das eigene Leben in Gefahr ist - sehr situationsabh&auml;ngig und die Richtigkeit des Vorgehens soll von den Admins beurteilt werden.</li></ul>
+				"
+		]
+	];
+	player createDiaryRecord ["serverrules",
+		[
+			"Neues Leben Regel", 
+				"
+				Die Missachtung der Regeln in dieser Liste f&uuml;hrt zur Entfernung oder Bann des Spielers:
+                		<ul><li>Wenn du von einem Polizisten oder einem feindlichen Gangmitglied/Rebell get&ouml;tet wirst, bist du nicht mehr als <b>'polizeilich gesucht'</b> vermerkt.</li>
+                		<li>Wenn du von jemand anderem get&ouml;tet wirst, bist du immer noch als <b>'polizeilich gesucht'</b> vermerkt.</li>
+                		<li>Wenn du stirbst, darfst du dich <b>nicht</b> r&auml;chen.</li>
+                		<li>Wenn du wahllos get&ouml;tet (RDM) wirst, ist es kein neues Leben, d.h. du <b>darfst</b> Rache &uuml;ben.</li>
+                		<li>Wenn du aus irgendeinem legalen Grund respawn dr&uuml;ckst, ist es kein neues Leben.</li>
+                		<li>Wenn du verfolgt wirst oder irgendetwas anderes passiert, woraus dein Tod resultiert und die Verursacher Cops/Gangs/Rebellen waren, ist es ein neues Leben.</li>
+                		<li>Wenn du dich selbst absichtlich umbringst um aus einer Situation zu entkommen, ist es kein neues Leben.</li></ul>
+				"
+		]
+	];
 
 	player createDiaryRecord ["serverrules",
 		[
-			"Bannable Offenses",
+			"Benehm dich!", 
 				"
-				Consider this your one and only warning.<br/><br/>
-
-				1. Hacking<br/>
-				2. Cheating<br/>
-				3. Exploiting (See 'Exploits')<br/>
-				4. Being kicked 3 or more times.<br/><br/>
-				"
-		]
-	];
-
-	player createDiaryRecord ["serverrules",
-		[
-			"Cop Interaction",
-				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-
-				1. Civilians can be arrested for looking in cops' backpacks/vehicles. Constantly doing this will result in your removal from the server.<br/>
-				2. Civilians can be arrested for following cops in game in order to give away their position.<br/>
-				3. Civilians or Rebels who take up arms to kill cops in town or elsewhere for no RP reason will be considered RDMing. See RDMing section.<br/>
-				4. Following and or harassing cops for long periods of time will be considered griefing and/or spamming, and will result in your removal from the server.<br/>
-				5. Actively blocking cops from doing their duties can lead to your arrest. Constantly doing this will result in your removal from the server.<br/><br/>
+				Die Missachtung der Regeln in dieser Liste f&uuml;hrt zur Entfernung oder Bann des Spielers:
+                		<ul><li>Wenn ein Admin euch sagen muss, dass ihr euch nicht anst&auml;ndig benehmt, dann ist euer Verhalten nicht annehmbar.</li>
+				<li>Beleidigungen sind verboten.</li>
+				<li>Ein Rollenspiel kaputt zu machen ist verboten.</li>
+				<li>Trollen, egal wie, ist verboten.</li>
+				<li>Die Liste geht weiter...</li>
+				<li>Benehmt euch einfach!</li>
+				<li>Die Admins entscheiden, ob euer Verhalten richtig war oder nicht.</li></ul>
 				"
 		]
 	];
-
-	player createDiaryRecord ["serverrules",
-		[
-			"Boats",
-				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-
-				1. Repeatedly pushing boats without permission.<br/>
-				2. Pushing a boat with the intention of hurting or killing someone. This is not RP, it is just a flaw in the mechanics.<br/>
-				3. Purposefully running over swimmers/divers.<br/><br/>
-				"
-		]
-	];
-
-	player createDiaryRecord ["serverrules",
-		[
-			"Aviation",
-				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-
-				1. Purposefully ramming a helicopter into anything. Other helicopters, vehicles, buildings.<br/>
-				2. Flying below 150m over the city constantly. Once is illegal, more than that you risk crashing into the city, thus against server rules.<br/>
-				3. Stealing helicopters without proper warning and significant time for the driver to lock the vehicle. If they land and run away without locking, fine, if they just get out and you get in before they get a chance to lock it, no no.<br/><br/>
-				"
-		]
-	];
-
-	player createDiaryRecord ["serverrules",
-		[
-			"Vehicles",
-				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-
-				1. Purposefully running people over (VRDM). There are accidents, and then there is going out of your way to run someone over.<br/>
-				2. Purposefully throwing yourself in front of vehicles in order to die/get hurt.<br/>
-				3. Ramming into other vehicles in order to cause an explosion.<br/>
-				4. Constantly trying to enter vehicles that do not belong to you in order to grief the vehicle owner, and not trying to RP.<br/>
-				5. Stealing a vehicle just to crash it or otherwise destroy it.<br/>
-				6. Purchasing multiple vehicles for the purpose of doing any of the above.<br/>
-				7. The only reason for shooting at a vehicle would be to disable it and/or fire warning shots in a role-play scenario.You are not to deliberately destroy enemies vehicles.<br/><br/>
-				"
-		]
-	];
-
-	player createDiaryRecord ["serverrules",
-		[
-			"Communication Rules",
-				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-
-				1. Side Chat may not be used to play music or otherwise micspam.<br/>
-				2. Spamming any chat channel will result in your removal.<br/>
-				4. Teamspeak channels are split up into areas for a reason. Cops must be in the cop channels at all times.<br/>
-				5. Civilians cannot be in any cop channels on teamspeak in order to gather information on their location or movements. Civs caught doing this will be removed the channel. Repeat offenders can be kicked or banned from both the game and teamspeak.<br/><br/>
-				"
-		]
-	];
-
-	player createDiaryRecord ["serverrules",
-		[
-			"Random Deathmatching (RDM)",
-				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-
-				1. Killing anyone without a roleplay cause.<br/>
-				2. Declaring a rebellion is not a cause to kill anyone, even cops.<br/>
-				3. Cops and civilians/rebels can only commence in a shootout if there are reasons relating to a crime.<br/>
-				4. If you are killed in the crossfire of a fight, it is not RDM.<br/>
-				5. Killing someone in an attempt to protect yourself or others is not RDMing.<br/>
-				6. Shooting a player without giving reasonable time to follow demands is considered RDM.<br/><br/>
-
-				These are all judged by admins on a case by case basis.<br/><br/>
-				"
-		]
-	];
-	player createDiaryRecord ["serverrules",
-		[
-			"New Life Rule",
-				"
-				The New Life Rule applies to police and civilians.<br/><br/>
-
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-
-				1. If you are killed you must wait 15 minutes before returning to the scene of your death.<br/>
-				2. If you die during roleplay your past crimes are forgotten, but you also cannot seek revenge.<br/>
-				3. If you are RDM'd, it is not a new life.<br/>
-				4. If you manually respawn, it is not a new life.<br/>
-				5. If you purposefully kill yourself to avoid roleplay, it is not a new life.<br/><br/>
-				"
-		]
-	];
-
-	player createDiaryRecord ["serverrules",
-		[
-			"Don't Be A Dick!",
-				"
-				If an admin has to tell you that you are being a dick, you are doing dickish things.<br/>
-				Causing others grief, disrupting roleplay, the list goes on.<br/>
-				Just don't be a dick okay?<br/>
-				This rule may be invoked at an admin's discretion.<br/><br/>
-				"
-		]
-	];
-
+	
 // Police Section
-	player createDiaryRecord ["policerules",
+	player createDiaryRecord ["Polizeiregeln",
 		[
 			"Crisis Negotiation",
 				"
@@ -248,166 +232,143 @@ player createDiarySubject ["controls","Controls"];
 	];
 	player createDiaryRecord ["policerules",
 		[
-			"The Federal Reserve",
-				"
-				1. The Federal Reserve is illegal for civilians to enter, unless they have been given authorization. If civilians enter without authorization they are to be escorted off-site or arrested if they persist.
-				2. Helicopters flying over the Federal Reserve may be asked to leave and disabled if they refuse.<br/>
-				2. If the Federal Reserve is getting robbed, it is encouraged that all available officers move in to stop it.<br/>
-				3. Nearby officers should immediately head to the Federal Reserve to assist. Petty crimes can be dropped during a robbery.<br/>
-				4. Lethal force on bank robbers may be used if no other alternative is available. Every option to taze and arrest the person should be made first.<br/>
-				5. Police may not fire blindly into the building.<br/>
-				6. The police should evacuate the civilians from the building during a robbery.<br/>
-				7. Any civilian who actively makes an attempt to block the police from entering the building may be treated as an accomplice.<br/>
-				8. Supervisory officers may hire individuals or contract a group of people to work as security guards for the bank. See 'Contracting' section for more information.<br/><br/>
+			"Verträge",
+			"
+				1. Hochrangige Beamte dürfen Informanten, Spionagegruppierungen oder andere Leute kontaktieren und einstellen und für die Hilfe bei polizeilichen Einsätzen/Operationen oder für das Dienen als Wachmann bezahlen.
+				2. Verträge bleiben aufrecht, bis der zuständige Beamte den Vertrag beendet.
+				3. Verträge bestehen nach dem Tod des Anbieters oder des Ausführenden weiter, außer der Vertrag wurde davor annulliert.
+				4. Spezieller VertragDer höchste Offizier kann Altis Bewohnern das Mitführen von illegalen Waffen erlauben, um sie ihm Rahmen eines Vertrags einzusetzen. Ein solcher Vertrag bleibt bestehen bis der Auftraggeber oder der Angestellte verstorben sind.
+				5. Die Hochrangigen Beamten müssen eine Bezahlung festlegen, von welcher die Hälfte als Vorschuss gezahlt wird. (Die andere Hälfte nach dem Erfüllen des Vertrages.) Das Feuern eines Angestellten, der die Gesetze und Vertragsregeln befolgt hat, ohne ihn bezahlt zu haben, hat eine Degradierung des Beamten zur Folge.
+				6. Jeder Beauftragte, der das Gesetz oder die Vertragsregeln bricht, gilt ab sofort als gesucht und darf festgenommen werden. Falls dieser/diese sich wehrt ist der Einsatz von scharfer Munition erlaubt.
+				7. Jeder Beauftragte, der die Regeln bricht, kann unter situationsabhängigen Umständen auch gekickt oder gebant werden.
 				"
 		]
 	];
-	player createDiaryRecord ["policerules",
+	player createDiaryRecord ["Polizeiregeln",
 		[
-			"Aviation",
+			"Widerstand",
 				"
-				1. No helicopter can land within city limits without authorization from the highest ranking officer online. (Exceptions being what is listed below.)<br/>
-				Kavala: The hospital helipad (037129) or docks (031128).<br/>
-				Athira: The sports field (138185) or behind the DMV (140188).<br/>
-				Pyrgos: The fields North/East of DMV (170127)<br/>
-				Sofia: Opposite the car shop (258214) or the fields Southeast of the garage (257212)<br/>
-				Small towns: An appropriate location may be chosen. This is to be judged by officers on a case by case basis.<br/><br/>
-
-				2. Helicopters may not land on roads.<br/>
-				3. Police may temporarily forbid landing at  but it cannot remain closed for a long period of time.<br/>
-				4. Helicopters cannot fly below 150m over the city without authorization.<br/>
-				5. Helicopters cannot hover over the city. Cops may only hover over the city if there is an active police operation going on.<br/><br/>
+				1. Jede Person, die rebelliert oder rebellische Handlungen ausführt gilt als gesuchter Krimineller.
+				2. Jeder, der Rebellenkleidung trägt oder ein Rebellenfahrzeug fährt/in einem mitfährt, ist ein Rebell.
+				3. Wenn ein Rebell eine unmittelbare Gefahr darstellt, soll/kann scharfe Munition eingesetzt werden.
+				4. RDM Regeln gelten in diesen Situationen sowohl für Cops als auch für Rebellen.
 
 				"
 		]
 	];
-
-	player createDiaryRecord ["policerules",
+	
+	player createDiaryRecord ["Polizeiregeln",
 		[
-			"Illegal Areas",
+			"Banküberfall", 
 				"
-				1. Gang areas are not considered illegal. Thus a cop may enter without a raid, but may not restrain or stop anyone inside without probable cause/illegal activity. (Talking to the gang NPC is NOT probable cause/illegal activity.)<br/>
-				2. Do not enter an illegal area unless it is part of a raid. see Raiding/Camping.<br/>
-				3. If you chase someone into an illegal area, call for backup.<br/>
-				4. Under no circumstances is an officer allowed to camp any illegal area.<br/><br/>
+				1. Wenn die Bank überfallen wird, müssen alle verfügbaren Einsatzkräfte einschreiten um den Überfall zu stoppen.
+				2. Patroulierende Beamte müssen sich umgehend zur Bank begeben, um zu helfen. Belanglose Verbrechen können aufgrund des Überfalls ignoriert werden.
+				3. Wegen der aktuellen Spielmechanik darf tödliche Gewalt gegen die Räuber verwendet werden, wenn es keine Alternative gibt. Jede Möglichkeit die Personen zu Tasern und festzunehmen sollte ausgeschöpft werden.
+				4. Die Polizei sollte jede Zivilperson während des Banküberfalls aus dem Hauptgebäude evakuieren.
+				5. Jeder Zivilist, der versucht die Polizei zu blockieren oder die Räuber zu assistieren, darf festgenommen und wenn es sein muss getötet werden.
+				6. Falls der Banküberfall erfolgreich war und das Gebiet gesichert wurde, sollten alle Beamten mindestens 5 Minuten patrouillieren und nach Verdächtigen Ausschau halten.
+				"
+		]
+	];
+	
+	player createDiaryRecord ["Polizeiregeln",
+		[
+			"Illegale Gebiete", 
+				"
+				1. Illegale Gebiete sind zugunsten der Zivilisten gemacht, nicht um der Polizei willen.
+				2. Ganggebiete sind keine illegalen Gebiete. Polizisten dürfen sie ohne Raid betreten, aber nicht wahllos Leute anhalten. (Mit dem Gang NPC zu sprechen ist keine illegale Aktivität.)
+				3. Betreten der illegalen Gebiete verboten, außer es ist ein Raid.
+				4. Wenn man jemanden in ein illegales Gebiet hinein verfolgt, dann muss man vor dem Betreten Verstärkung rufen.
+				5. Unter keinen Umständen darf ein Beamter die illegalen Gebiete abcampen.
+				"
+		]
+	];
+	
+	player createDiaryRecord ["Polizeiregeln",
+		[
+			"Pattrullieren", 
+				"
+				1. 1. Ein Polizist darf auf den Straßen und in den Städten patrouillieren, nach stehen gelassenen Fahrzeugen und kriminellen Aktivitäten Ausschau halten.
+				2. Patrouillen können innerhalb der Stadt sowohl zu Fuß, als auch mit unter 30 km/h fahrenden Fahrzeugen gemacht werden.
+				3. Illegale Gebiete sind in Patrouillen nicht eingeschlossen.
+
+				Checkpoints:<br/>
+				Die Cops können zusätzliche Checkpoints einrichten und als strategische Anlaufpunkte nutzen, um effizient in Gefechten vorzugehen und die Sicherheit auf den Straßen zu fördern.
+
+				1. Ein Checkpoint muss aus min. 3 Polizisten und 2 Fahrzeugen bestehen. Ein ATV zählt nicht als erfordertes Fahrzeug.
+				2. Ein Checkpoint kann nicht unterhalb von 1500 Metern von einem illegalen Gebiet aufgestellt werden.
+				3. Checkpoints können nur auf Straßen eingerichtet werden, aber nicht auf Kreuzungen.
+				4. Checkpoints müssen nicht auf der Karte markiert werden.
+				"
+		]
+	];
+	
+	player createDiaryRecord ["Polizeiregeln",
+		[
+			"Fahrzeuge", 
+				"
+				1. Fahrzeuge die ordnungsgemäß oder auf einem Parkplatz geparkt sind, werden stehen gelassen.<br/>
+				2. Fahrzeuge, die verlassen und/oder kaputt aussehen können beschlagnahmt werden.<br/>
+				3. Boote müssen am Ufer geparkt werden.<br/>
+				4. Jedes Fahrzeug was über einen längeren Zeitraum nicht bewegt wurde, darf beschlagnahmt werden.<br/>
+				5. Das Beschlagnahmen ist eine essentielle Aufgabe, da der Server sauber gehalten wird und weniger lagt.<br/>
+				6. Polizeischnellboote dürfen eingesetzt werden um Verbrecher aufzuhalten. Die Minigun auf dem Schnellboot ist dazu gedacht die Reifen zu zerschießen, nicht das ganze Fahrzeug. Gesuchte Personen dürfen damit, falls erforderlich, erschossen werden.Das gleiche gilt für illegale Fahrzeuge, nur die Reifen zerschießen.<br/><br/>
 				"
 		]
 	];
 
-	player createDiaryRecord ["policerules",
+	player createDiaryRecord ["Polizeiregeln",
 		[
-			"Patrolling",
+			"Verhalten in Städten", 
 				"
-				1. Police may patrol the island's roads and towns searching for abandoned vehicles and criminal activity.<br/>
-				2. Patrols can be done on foot inside of a town, or in a vehicle when outside.<br/>
-				3. Patrols do not include illegal areas. See Raiding/Camping.<br/><br/>
+				1. Beamte dürfen nicht einfach in Städten rumstehen und trödeln.<br/><br/>
+				2. Beamte dürfen selbstverständlich in Notsituationen eingreifen.<br/>
+				3. Wenn ein Beamter ohne ersichtlichen Grund irgendwo rumsteht, wird er vom Server entfernt./h<br/>
+				4.Hauptstrasse: 60 Km/h/h<br/>
+				5.Marktplatz und umgebung: 30 Km/h<br/>
+				6.Autobahn 120Km/h/h<br/>
 				"
 		]
 	];
-
-	player createDiaryRecord ["policerules",
+	
+	player createDiaryRecord ["Polizeiregeln",
 		[
-			"Checkpoints",
+			"City Protocol", 
 				"
-				Cops are encouraged to setup checkpoints in strategic areas to help combat illegal activity and promote safety on the road.<br/><br/>
-
-				1. A checkpoint must consist of 3 or more officers, utilizing 2 or more vehicles. An ATV does not count as one of the required vehicles, but may still be used.<br/>
-				2. A checkpoint can not be setup within 300m of an illegal area. Basically, you cannot set one up on top of an illegal area.<br/>
-				3. Checkpoints may only be setup on roads, but it does not have to be on a crossroad.<br/>
-				4. Checkpoints do not have to be marked on the map.<br/><br/>
-
-
-				Proper Checkpoint Procedure:<br/>
-				1. Have the driver stop the vehicle at a safe distance and turn off the engine.<br/>
-				2. Ask the driver and any passengers if they have any weapons.<br/>
-				3. Ask the driver and any passengers to exit the vehicle. If they have weapons, do not immediately restrain them when they get out, tell them to lower their weapons and given them a reasonable amount of time to do so.<br/>
-				4. Ask them where they are headed to and from.<br/>
-				5. Ask if they will submit to a search.<br/>
-				6. If they allow a search, you may restrain them and search them.<br/>
-				7. If they do not submit to a search, you must let them go, unless there is probable cause.<br/>
-				8. After the search is done, you may allow them to re-enter their vehicle and drive away.<br/>
-				9. In case anything illegal is found, the person may be ticketed or arrested depending on the crime.<br/><br/>
+				1. Officers können den großen Städten patrouillieren - Kavala, Athira, Pyrgos und Sofia.<br/>
+				2. Officers können Fahrzeuge stoppen, um sicherzustellen, dass es keine Autos gibt, die gepfändet werden müssen.<br/>
+				3. Officers Können die Stadt mit einer großen anzahl an Officers sollte ein rebellischer Akt auftreten. Nachdem der Bereich klar ist, müssen sie die Stadt wieder verlassen.<br/>
+				4. Das Kriegsrecht kann nicht jederzeit deklariert werden.<br/>
+				5. Die Polizei HQ Gebäude sind illegal für Zivilisten ohne Genehmigung zu betreten, aber es ist nicht illegal für Zivilisten in der Nähe zu sein, wenn sie keinen ärger verursachen.<br/><br/>
 				"
 		]
 	];
-
-	player createDiaryRecord ["policerules",
+	
+	player createDiaryRecord ["Polizeiregeln",
 		[
-			"Vehicles",
+			"Festnahme und Bußgeld",
 				"
-				1. Vehicles in the parking lot, or are reasonably parked elsewhere should be left alone.<br/>
-				2. Vehicles that look abandoned, broken, with no driver, can be impounded.<br/>
-				3. Boats should be parked reasonably on shore.<br/>
-				4. Any vehicle that hasn't moved in a significant amount of time may be impounded.<br/>
-				5. Impounding is an essential job for a cop, it helps keep the server clean and less laggy.<br/>
-				6. If in doubt, always search the vehicle and message the owner(s) before impounding.<br/>
-				7. Police speedboats or Hunter HMGs may be used to assist in apprehending criminals. The weapon should be used to disable vehicles, not to blow them up.<br/><br/>
+				Nur Kriminelle, die für sich selbst oder andere eine Gefahr darstellen, werden festgenommen.
+
+				1. Man darf keinen festnehmen, wenn er/sie das Bußgeld bezahlt.
+				2. Bei Kontrollen und Tatverdächtigen dürfen diese bei Kontrollbegin Handschellen angelegt werden.
+				3. Wenn ein Zivilist auf der Wanted Liste steht, dann versucht ihn festzunehmen, außer wenn tödliche Gewalt erforderlich ist.Bußgelder an Zivilisten zu verteilen gilt als eine Verwarnung. Wenn eine Person, das Gesetz bricht, aber für keinen eine Gefahr darstellt, muss ein Bußgeld verhängt werden.
+
+
+				1. Das Bußgeld muss einen gerechtfertigten Preis haben. (siehe Bußgeldliste)
+				2. Die Verweigerung der Zahlung eines Bußgeldes führt zur Verhaftung.
+				3. Zu hohe und nicht angebrachte Bußgelder zu verhängen ist strengstens verboten und wird mit einer Kündigung geahndet.
 				"
 		]
 	];
-
-	player createDiaryRecord ["policerules",
+		
+	player createDiaryRecord ["Polizeiregeln",
 		[
-			"Speeding",
-				"
-				The following speeds are to be enforced by the Altis Police Force for the absolute safety of the citizens of Kavala and all travelling beyond the city.<br/><br/>
-
-				Inside major cities:<br/>
-				Small roads: 50km/h<br/>
-				Main roads: 65km/h<br/>
-				Outside major cities:<br/>
-				Small roads: 80km/h<br/>
-				Main roads: 110km/h<br/><br/>
-				"
-		]
-	];
-
-	player createDiaryRecord ["policerules",
-		[
-			"City Protocol",
-				"
-				1. Officers may patrol major cities - Kavala, Athira, Pyrgos and Sofia.<br/>
-				2. Officers may stop by the car shop to make sure there are no cars that need to be impounded.<br/>
-				3. Officers may not stand around or loiter in the centre of town.<br/>
-				4. Officers may enter the town in a large number should a rebellious act occur. After the area is clear, they need to leave the town again.<br/>
-				5. Martial law may not be declared at any time.<br/>
-				6. The Police HQ buildings are illegal for civilians to enter without authorization, however it is NOT illegal for civilians to be nearby unless they are causing a nuisance.<br/><br/>
-				"
-		]
-	];
-
-	player createDiaryRecord ["policerules",
-		[
-			"Arresting and Ticketing",
-				"
-				Arresting should be done to criminals who are considered a danger to themselves or others.<br/><br/>
-
-				1. You may not arrest someone if you have given them a ticket and they paid it.<br/>
-				2. You must tell the suspect why they are being arrested before you arrest them.<br/>
-				3. If a civilian is wanted, you may arrest them. Do not kill them, unless the situation falls under the 'Use of Lethal Force' section.<br/><br/>
-
-
-				Ticketing a civilian is considered a warning for the civilian. If they break a law, but do not pose a threat to anyone, you may ticket a civilian.<br/><br/>
-
-				1. Tickets must be a reasonable price.<br/>
-				2. Ticket prices should be based off of the crimes committed.<br/>
-				3. Refusal to pay a legit ticket is grounds for arrest.<br/>
-				4. Giving a civilian and illegitimate ticket, such as $100k for speeding, etc., is not allowed and will result in your removal from the police department.<br/><br/>
-
-				A complete list of all crimes and the appropriate punishments should be given to officers during training. If in doubt, or if you have not been trained, ask a higher ranking officer what to do.<br/><br/>
-
-				The list is available at crime.sealteamsloth.com<br/><br/>
-				"
-		]
-	];
-
-	player createDiaryRecord ["policerules",
-		[
-			"Weapons",
+			"Waffen", 
 				"
 				A cop is NEVER allowed to supply civilians with weapons. This will get you banned from the server and removed from being a cop.<br/><br/>
 
-				Legal Weapons for Civilians to carry with a permit:<br/>
+				Legal Waffen für Zivilisten mit einer Genehmigung:<br/>
 				1. P07<br/>
 				2. Rook<br/>
 				3. ACP-C2<br/>
@@ -415,15 +376,15 @@ player createDiarySubject ["controls","Controls"];
 				5. 4-five<br/>
 				6. PDW2000<br/><br/>
 
-				Any other weapon (Including Silenced P07 [Considered a Police Weapon]) is illegal.<br/><br/>
+				Jede andere Waffe (einschließlich einer P07 [Als eine Polizeiwaffe]) ist illegal.<br/><br/>
 
-				1. Civilians are not allowed to have a weapon out within the town limits.<br/>
-				2. Civilians may have a gun out when they are not in the town. However they should submit to a license search if confronted by an officer and should have the gun lowered (Press Ctrl Twice).<br/><br/>
+				1. Innerhalb der stadtkrenzen sind alle Waffen Verboten.<br/>
+				2. Zivilisten dürfen eine Waffe mitsich führen, wenn sie nicht in der Stadt sind. Allerdings sollten sie auch eine Lizenz haben, wenn sie von einem Offizier kontrolliert  sollte die Waffe gesenkt werden (Drücken Sie Strg zweimal).<br/><br/>
 				"
 		]
 	];
-
-	player createDiaryRecord ["policerules",
+	
+	player createDiaryRecord ["Polizeiregeln",
 		[
 			"Use of Non-Lethal Force",
 				"
@@ -436,37 +397,37 @@ player createDiarySubject ["controls","Controls"];
 		]
 	];
 
-	player createDiaryRecord ["policerules",
+	player createDiaryRecord ["Polizeiregeln",
 		[
-			"Raiding/Camping",
+			"Raid und Campen",
 				"
-				Raiding is defined as a squad of police officers invading an area of high criminal activity in order to stop the criminals in illegal acts.<br/><br/>
+				Ein Raid wird durch eine Truppe von Polizisten definiert, die ein Gebiet mit hoher krimineller Aktivität invadieren.<br/><br/>
 
-				1. In order to raid an area, the cops must have at least 4 officers involved, one of which must be a Sergeant or above.<br/>
-				2. All civilians in a raid area may be restrained and searched. If nothing illegal is found, you must let them go.<br/>
-				3. If illegals are found during a search, you may proceed to arrest or fine as usual.<br/>
-				5. Lethal force is only authorized as described under 'Use of Lethal Force'.<br/>
-				6. After the area is secure, the officers must leave the area.<br/>
-				7. An area cannot be raided again for 20 minutes after a previous raid.<br/>
-				8. If the raid is a failure (All officers die), the 20 minute timer still applies to those officers.<br/>
-				9. Backup may be called in, but it may not consist of fallen officers (see 'New Life Rule').<br/><br/>
+				1. Bei einem Raid müssen 4 Polizisten dabei sein. Einer der Polizisten muss hochrangig sein und die Führung über die Truppe übernehmen.<br/>
+				2. Der Start eines Raids muss 5 Minuten vorher angekündigt werden.<br/>
+				3. Alle Zivilisten im Gebiet dürfen festgenommen und durchsucht werden. Falls nichts Illegales gefunden wird, lasst sie laufen.<br/>
+				4. Falls etwas Illegales gefunden wird, wird das normale Prozedere durchgeführt.<br/>
+				5. Bei unmittelbarer Gefahr ist der Einsatz von scharfer Munition erlaubt.<br/>
+				6. Wenn das Gebiet gesichert ist, müssen die Polizisten das Gebiet verlassen.<br/>
+				7. Das geraidete Gebiet darf innerhalb von 30 Min. nicht wieder geraided werden.<br/>
+				8. Wenn der Raid scheitert, indem alle Beamten sterben, gilt die 30 Min. Regel für die verstorbenen Beamten.<br/>
+				9. Man darf Verstärkung rufen, aber die verstorbenen Polizisten dürfen nicht mehr eingreifen (Neues Leben).<br/><br/>
+				
+				Campen ist definiert als längeres Verbleiben eines Polizisten an einem Ort.<br/><br/>
 
-				Camping is defined as the prolong stay of an officer in an area.<br/><br/>
-
-				1. Checkpoints are not considered camping. See Checkpoint section for a definition of proper checkpoint procedures.<br/>
-				2. See Bank Robbery and Agia Marina Protocol sections for more info on camping in the main town.<br/>
-				3. Camping of illegal areas is staying longer than needed after a raid, or if officers do not conduct a raid but continue to watch and take action against civilians entering the area.<br/><br/>
+				1. An Checkpoints zu bleiben, zählt nicht als Campen.<br/>
+				2. Man wird vom Dienst suspendiert, wenn man nach einem Raid immer noch aktiv gegen Zivilisten in dem Gebiet vorgeht.<br/><br/>
 				"
 		]
 	];
-
-	player createDiaryRecord ["policerules",
+	
+	player createDiaryRecord ["Polizeiregeln",
 		[
-			"Chain of Command",
+			"Befehlskette",
 				"
-				The highest ranking officer on duty is in charge of the police force outside of admins currently online. The high ranking officer is expected to follow the rules and guidelines of his/her rank, and must report to the admin in case any action need be taken.<br/><br/>
+				Der ranghöchste Offizier ist für die Koordination der Polizei zuständig. Dieser Offizier ist dafür zuständig Vergehen seitens der Polizei beim Admin zu melden.Hochrangige Offiziere haben bei polizeilichen Aktionen das volle Kommando. Rekruten haben zu gehorchen und keine Einwände zu äußern.Einsatz von tödlicher Gewalt<br/><br/>
 
-				Police Chain of Command:<br/>
+				Polizei-Befehlskette :<br/>
 				1. Chief<br/>
 				2. Deputy Chief<br/>
 				3. Superintendent<br/>
@@ -476,67 +437,78 @@ player createDiarySubject ["controls","Controls"];
 				7. Senior Patrol Officer<br/>
 				8. Patrol Officer<br/>
 				9. Cadet<br/><br/>
-
-				Cops in game who are not enrolled/accepted into the SPD are the lowest tier and have no say in police operations.<br/><br/>
 				"
 		]
 	];
-
-	player createDiaryRecord ["policerules",
+	
+	player createDiaryRecord ["Polizeiregeln",
 		[
-			"Use of Lethal Force",
+			"Einsatz tödlicher Gewalt",
 				"
-				1. Use of Lethal force is only permitted for the protection of your life, another officers life, or a civilians life, if and only if non-lethal force would not be effective.<br/>
-				2. Discharging of a weapon when not under threat or not during training exercises is not allowed. Officers caught in violation of this rule will be removed from the server and suspended from the SPD.<br/>
-				3. Failure to follow proper weapons discipline and procedure will get you removed from the server and suspended from the SPD.<br/><br/>
+				1. Der Einsatz von tödlicher Gewalt ist erlaubt um das eigene Leben, das Leben eines anderen Offiziers oder eines Zivilisten zu beschützen, und nur wenn der Einsatz von Tasern nicht effektiv ist<br/>
+				2. Falls ein Offizier beim wahllosen Abfeuern der Waffe (Schießtraining erlaubt) erwischt wird, hat es eine Kündigung und einen Kick zur Folge.<br/><br/>
 				"
 		]
 	];
-
-	player createDiaryRecord ["policerules",
+	
+	player createDiaryRecord ["Polizeiregeln",
 		[
-			"Teamspeak Rule",
+			"Nicht tödliche Gewalt",
 				"
-				1. All cops must be on Teamspeak 3 in a designated cop channel. Failure to be on Teamspeak during an admin check will result in your immediate dismissal from the server.<br/>
-				2. Please join Teamspeak BEFORE you spawn in as a cop, heck, join Teamspeak before you even join the server.<br/><br/>
+				Taser sind die einzige Form von nicht tödlicher Gewalt.<br/><br/>
+				1. Taser sollen nur an nicht kooperierenden Gesetzesbrechern eingesetzt werden um sie kampfunfähig zu machen und festzunehmen.<br/>
+				2. Wer seinen Taser ohne Grund abschießt oder zum Trollen benutzt wird suspendiert.<br/>
+				3. Benutzt den Taser nicht um euren Willen durchzusetzen..<br/><br/>
 				"
 		]
 	];
-
-
-
+	
+	player createDiaryRecord ["Polizeiregeln",
+		[
+			"Teamspeakregeln",
+				"
+				1. Alle Polizisten müssen in einem bestimmten cop Kanal auf Teamspeak sein.<br/><br/>
+				"
+		]
+	];
+	
+	
+	
 // Illegal Items Section
 	player createDiaryRecord ["illegalitems",
 		[
-			"Rebel Rules",
+			"Rebellenregeln",
 				"
-				A rebel is one who rises in armed resistance against a government. In this case it would be the police. However, due to the small amount of police compared to the possible amount of rebels, do not attack the police without a reason, please be civil and use common sense, and don't take the word rebel literally, but instead how it will make this server fun for all.<br/><br/>
-				1. A rebel must first form a gang, and then declare intentions.<br/>
-				2. Resistance does not excuse RDMing (See RDMing in General Rules)<br/>
-				3. Resistance roleplay should be conducted in more ways than constantly robbing the bank or shooting police officers.<br/>
-				4. Resistance must be coordinated.<br/>
-				5. A PROPER reason must be behind each and every attack.<br/><br/>
-				"
-		]
-	];
-	player createDiaryRecord ["illegalitems",
-		[
-			"Gang Rules",
-				"
-				1. Being in a gang is not illegal. Only when illegal crimes are committed.<br/>
-				2. Being in a gang area is not illegal. Only when partaking in illegal activities.<br/>
-				3. Gangs may hold and control gang areas. Other gangs may attack a controlling gang to compete for control of a gang area.<br/>
-				4. To declare war on another gang, the leader must announce it in global and all gang members of both gangs must be notified. For a more long term gang war, a declaration should be made on the forums.<br/>
-				5. Gangs may not kill unarmed civilians, unless said civilian is part of a rival gang and in your gangs controlled area.<br/>
-				6. Gangs may not kill civilians, unless they are under threat. Killing unarmed civilians because they do not comply is considered RDM, but you can injure/damage.<br/><br/>
+				Rebellen leisten bewaffneten Widerstand gegen die Regierung, welche in diesem Fall die Polizei ist. Allerdings ist die Anzahl der Polizisten, verglichen mit der möglichen Anzahl der Rebellen, ein Grund um die Polizei nicht immer gleich zu erschießen. Bitte nehmt die Rebellion nicht zu wörtlich, versucht stattdessen das Spiel mit rebellischer List und Spaß zu gestalten.<br/><br/>
+				
+				1. Ein Rebell muss als erstes eine Gang gründen und dann seine Intentionen verkünden (siehe Gangforum)<br/>
+				2. Widerstand bedeutet nicht RDM (siehe Random Deathmatch Regeln).<br/>
+				3. Widerstand soll als Rollenspiel stattfinden. Es gibt viele Wege, d.h. nicht nur Bullen abknallen oder Bank ausrauben.<br/>
+				4. Der Widerstand muss koordiniert sein.<br/>
+				5. Jeder Angriff muss einen ANGEMESSENEN Grund haben.<br/>
+				6. Die Nutzung von Sprengstoff ist für die Rebellen erlaubt. Das Sprengen von allen wichtigen Gebäuden, die eine Bezeichnung auf der Karte haben, ist verboten.<br/>
+				7. Benutzt den Sprengstoff nicht wahllos auf den Straßen, sondern nur bei gezielten Angriffen auf die Polizei, ansonsten fällt es unter RDM.<br/><br/>
 				"
 		]
 	];
 	player createDiaryRecord ["illegalitems",
 		[
-			"Illegal Vehicles",
+			"Gangregeln",
 				"
-				A civilian in control of the following prohibited vehicles is subject to the consequences defined in the unauthorized control of a prohibited vehicle law.<br/><br/>
+				1. In einer Gang zu sein ist nicht illegal. Nur wenn illegale Delikte verübt werden.<br/>
+				2. In einem Ganggebiet zu sein, ist nicht illegal.<br/>
+				3. Gangs können Ganggebiete einnehmen und kontrollieren. Andere Gangs sollten diese Gebiete angreifen um die Kontrolle streitig zu machen.<br/>
+				4. Um einer anderen Gang den Krieg zu erklären, muss der Leader im side Channel eine Ansage machen. Die Namen aller Mitglieder von beiden Gangs müssen niedergeschrieben werden. Für einen längeren Krieg wird die Erklärung im Forum gemacht.<br/>
+				5. Gangs dürfen keine unbewaffneten Zivilisten töten. Das Töten von Wehrlosen wird als RDM betrachtet, aber ihr dürft sie verletzen.<br/>
+				6. Falls eine Gang von Zivilisten mit Waffen bedroht wird, darf sie sich wehren.<br/><br/>
+				"
+		]
+	];
+	player createDiaryRecord ["illegalitems",
+		[
+			"Liste illegaler Fahrzeuge",
+				"
+				Illegale Vehicles = Mann kann sich strafbar machen wenn man die bei sich hat!<br/><br/>
 
 				1. Ifrit<br/>
 				2. Speedboat<br/>
@@ -547,9 +519,9 @@ player createDiarySubject ["controls","Controls"];
 	];
 	player createDiaryRecord ["illegalitems",
 		[
-			"Illegal Weapons",
+			"Illegale Waffen",
 				"
-				A civilian in possession of the following is subject to the consequences as defined in the illegal possession of a firearm law.<br/><br/>
+				Das sind illegale Waffen usw.<br/><br/>
 
 				1. MX Series<br/>
 				2. Katiba Series<br/>
@@ -559,7 +531,7 @@ player createDiarySubject ["controls","Controls"];
 				6. SDAR Rifle<br/>
 				7. Sting SMG<br/>
 				8. Silenced P07 (Taser)<br/>
-				9. Any explosives<br/><br/>
+				9. Und andere explosive Sachen<br/><br/>
 				"
 		]
 	];
@@ -567,9 +539,10 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Illegal Items",
 				"
-				The following items are illegal to posses:<br/><br/>
-				1. Turtle<br/>
-				2. Cocaine<br/>
+				Die Items darf man nicht farmen!<br/><br/>
+				
+				1. Schildkröten<br/>
+				2. Kokain<br/>
 				3. Heroin<br/>
 				4. Cannabis<br/>
 				5. Marijuana<br/><br/>
@@ -577,7 +550,7 @@ player createDiarySubject ["controls","Controls"];
 		]
 	];
 
-
+	
 // Controls Section
 
 	player createDiaryRecord ["controls",
@@ -585,17 +558,14 @@ player createDiarySubject ["controls","Controls"];
 			"",
 				"
 				Y: Open Player Menu<br/>
-				U: Lock and unlock vehicles and houses<br/>
+				U: Lock and unlock cars<br/>
 				F: Cop Siren (if cop)<br/>
 				T: Vehicle Trunk<br/>
-				Left Shift + B: Surrender<br/>
 				Left Shift + R: Restrain (Cop Only)<br/>
 				Left Shift + G: Knock out / stun (Civ Only, used for robbing them)<br/>
-				Left Windows: Main Interaction key which is used for interacting with vehicles/houses (repair, etc) and for cops to interact with civilians. Can be rebound to a single key like H by pressing ESC->Configure->Controls->Custom->Use Action 10<br/>
-				Left Windows + T: Used for picking up items/money and gathering<br/>
-				Left Shift + L: Activates cop/medic siren lights (as a cop/medic)<br/>
+				Left Windows: Main Interaction key which is used for picking up items/money, gathering, interacting with cars (repair,etc) and for cops to interact with civilians. Can be rebound to a single key like H by pressing ESC->Configure->Controls->Custom->Use Action 10<br/>
+				Left Shift + L: Activates cop siren lights (as a cop).<br/>
 				Left Shift + H: Holster's your pistol<br/>
-				Left Ctrl + H: Revert holster action<br/>
 				"
 		]
 	];
