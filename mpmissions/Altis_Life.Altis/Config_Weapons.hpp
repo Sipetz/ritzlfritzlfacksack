@@ -217,7 +217,9 @@ class WeaponShops {
             { "ItemGPS", "", 100, 45 },
             { "Binocular", "", 150, -1 },
             { "FirstAidKit", "", 150, 65 },
-            { "NVGoggles", "", 1200, 980 }
+			{ "Medikit", "", 500, 450 },
+            { "NVGoggles", "", 1200, 980 },
+			{ "tf_anprc154", "Funk", 2000, 980 },
         };
         mags[] = {};
         accs[] = {};
