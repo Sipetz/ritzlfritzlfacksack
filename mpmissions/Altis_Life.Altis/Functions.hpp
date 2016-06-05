@@ -293,6 +293,16 @@ class Life_Client_Core {
 		class revived {};
 		class revivePlayer {};
 	};
+	
+	class CopPlaceablesMEDIC {
+		file = "core\medical\MedicPlaceables";
+		class placeablesInitMEDIC {};
+		class placeablesMenuMEDIC {};
+		class placeablesRemoveAllMEDIC {};
+		class placeablePlaceMEDIC {};
+		class placeableCancelMEDIC {};
+		class placeablesPlaceCompleteMEDIC {};
+	};
 
 	class Network {
 		file = "core\functions\network";

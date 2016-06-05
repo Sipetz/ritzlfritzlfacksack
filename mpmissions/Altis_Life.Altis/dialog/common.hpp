@@ -1028,6 +1028,14 @@ class Life_RscMapControl
 		coefMax = 1;
 		icon = "\A3\ui_f\data\map\mapcontrol\waypointCompleted_ca.paa";
 	};
+	class LineMarker
+	{
+		lineDistanceMin = 3e-005;
+		lineLengthMin = 5;
+		lineWidthThick = 0.014;
+		lineWidthThin = 0.008;
+		textureComboBoxColor = "#(argb,8,8,3)color(1,1,1,1)";
+	};
 	moveOnEdges = 0;//1;
 	x = "SafeZoneXAbs";
 	y = "SafeZoneY + 1.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
