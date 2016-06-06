@@ -180,24 +180,26 @@ switch (_code) do {
 
 		// per CTRL+L die Kollisionslichter von Heli/Jet ein-/ausschalten
 		if(ctrlKey && !_alt && !_shift) then {
+			private ["_isOn", "_drv"];
 			_veh = vehicle player;
-			if(_veh isKindOf "Air") then {
-				private ["_isOn"];
+			_drv = driver _veh;
+			// _veh ist Luftfahrzeug UND Spieler IST Fahrer
+			if((_veh isKindOf "Air") && (player == _drv)) then {
 				_isOn = isLightOn _veh;
 				if(_isOn) then {
 					[] spawn {
 						player action ["CollisionLightOff", _veh];
-						hint "Anti-Kollisionslicht AUS";
+						hint "Anti-Kollisionslicht AUS"; // nur zu Debug-Zwecken
 					};
 				} else {
 					[] spawn {
 						player action ["CollisionLightOn", _veh];
-						hint "Anti-Kollisionslicht AN";
+						hint "Anti-Kollisionslicht AN"; // nur zu Debug-Zwecken
 					};
 				};
 				_handled = true;
 			} else {
-				hint "Du steuerst kein Luftfahrzeug!?";
+				hint "Du steuerst kein Luftfahrzeug!?"; // nur zu Debug-Zwecken
 			};
 		};
 	};
