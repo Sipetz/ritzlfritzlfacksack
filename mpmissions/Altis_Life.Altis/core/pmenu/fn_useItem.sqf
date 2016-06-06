@@ -75,7 +75,7 @@ switch (true) do {
 	};
 	
 	case (_item =="bottledwhiskey"): {
-		if(playerSide in [west,independet]) exitWith {hint localize "STR_MSC_WestIndNoNo";};
+		if(playerSide in [west,independent]) exitWith {hint localize "STR_MSC_WestIndNoNo";};
 		if((player getVariable ["inDrink", FALSE])) exitWith {hint localize "STR_MISC_AlreadyDrinking";};
 		if(([false,_item,1] call life_fnc_handleInv))then {
 			life_thirst = 100;
@@ -88,7 +88,7 @@ switch (true) do {
 	};
 
 	case (_item =="bottledshine"): {
-		if(playerSide in [west,independet]) exitWith {hint localize "STR_MSC_WestIndNoNo";};
+		if(playerSide in [west,independent]) exitWith {hint localize "STR_MSC_WestIndNoNo";};
 		if((player getVariable ["inDrink", FALSE])) exitWith {hint localize "STR_MISC_AlreadyDrinking";};
 		if(([false,_item,1] call life_fnc_handleInv))then {
 			life_thirst = 100;

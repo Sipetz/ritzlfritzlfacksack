@@ -177,6 +177,29 @@ switch (_code) do {
 		};
 
 		if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
+
+		// per CTRL+L die Kollisionslichter von Heli/Jet ein-/ausschalten
+		if(ctrlKey && !_alt && !_shift) then {
+			_veh = vehicle player;
+			if(_veh isKindOf "Air") then {
+				private ["_isOn"];
+				_isOn = isLightOn _veh;
+				if(_isOn) then {
+					[] spawn {
+						player action ["CollisionLightOff", _veh];
+						hint "Anti-Kollisionslicht AUS";
+					};
+				} else {
+					[] spawn {
+						player action ["CollisionLightOn", _veh];
+						hint "Anti-Kollisionslicht AN";
+					};
+				};
+				_handled = true;
+			} else {
+				hint "Du steuerst kein Luftfahrzeug!?";
+			};
+		};
 	};
 
 	//Y Player Menu

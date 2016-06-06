@@ -95,4 +95,6 @@ if(!((player distance (getMarkerPos "police_hq_1") < 30) OR  (player distance (g
 //Set Alktest
 // Button
 _Btn9 ctrlSetText localize "STR_pInAct_Breathalyzer";
-_Btn9 buttonSetAction "[[player],""life_fnc_breathalyzer"",""life_fnc_alkoholdrugtester"",life_pInact_curTaget,FALSE] spawn life_fnc_MP;closeDialog 0";	
+// _Btn9 buttonSetAction "[[player],""life_fnc_breathalyzer"",""life_fnc_alkoholdrugtester"",life_pInact_curTaget,FALSE] spawn life_fnc_MP;closeDialog 0";	
+_Btn9 buttonSetAction "[[player],""life_fnc_alkoholdrugtester"",life_pInact_curTaget,FALSE] spawn life_fnc_MP;closeDialog 0";	
+
