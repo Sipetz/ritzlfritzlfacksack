@@ -11,8 +11,8 @@
 */
 
 private ["_obj", "_id"];
-_obj = _this select 0
-_id = _this select 2
+_obj = _this select 0;
+_id = _this select 2;
 _obj removeAction _id;
 deleteVehicle _obj;
 
