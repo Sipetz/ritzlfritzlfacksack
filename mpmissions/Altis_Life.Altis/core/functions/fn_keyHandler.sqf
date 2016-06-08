@@ -180,28 +180,30 @@ switch (_code) do {
 
 		// per CTRL+L die Kollisionslichter von Heli/Jet ein-/ausschalten
 		if(ctrlKey && !_alt && !_shift) then {
-			private ["_isOn", "_drv"];
-			_veh = vehicle player;
-			_drv = driver _veh;
-			// _veh ist Luftfahrzeug UND Spieler IST Fahrer
-			if((_veh isKindOf "Air") && (player == _drv)) then {
-				_isOn = isLightOn _veh;
-				if(_isOn) then {
-					[] spawn {
-						player action ["CollisionLightOff", _veh];
-						hint "Anti-Kollisionslicht AUS"; // nur zu Debug-Zwecken
-					};
-				} else {
-					[] spawn {
-						player action ["CollisionLightOn", _veh];
-						hint "Anti-Kollisionslicht AN"; // nur zu Debug-Zwecken
-					};
+			private ["_isOn", "_drv", "_veh", "_hasCtrl"]; 
+			_veh = vehicle player; 
+			_drv = driver _veh; 
+			_hasCtrl = false; 
+			if(_veh isKindOf "Air") then { 
+				if((isCopilotEnabled _veh) && ((player == commander _veh) || (player == gunner _veh))) then { 
+					_hasCtrl=true; 
+				}; 
+			if((player == _drv) || (_hasCtrl)) then { 
+				_isOn = isCollisionLightOn _veh;
+				if(_isOn) then { 
+					player action ["CollisionLightOff", _veh];
+					hint "Anti-Kollisionslicht AUS";
+				} else { 
+					player action ["CollisionLightOn", _veh];
+					hint "Anti-Kollisionslicht AN";
 				};
 				_handled = true;
 			} else {
-				hint "Du steuerst kein Luftfahrzeug!?"; // nur zu Debug-Zwecken
+				hint "Du hast NICHT die Kontrolle";
 			};
-		};
+		} else {
+			hint "Du sitzt in keinem Luftfahrzeug!";
+		}; 
 	};
 
 	//Y Player Menu
