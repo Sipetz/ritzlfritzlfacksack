@@ -179,29 +179,26 @@ switch (_code) do {
 		if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
 
 		// per CTRL+L die Kollisionslichter von Heli/Jet ein-/ausschalten
-		if(ctrlKey && !_alt && !_shift) then {
-			private ["_isOn", "_drv"];
-			_veh = vehicle player;
+		if(_ctrlKey && !_alt && !_shift) then {
+			private ["_isOn", "_drv", "_veh", "_cmdr", "_gnr"]; 
+			_veh = vehicle player; 
 			_drv = driver _veh;
-			// _veh ist Luftfahrzeug UND Spieler IST Fahrer
-			if((_veh isKindOf "Air") && (player == _drv)) then {
-				_isOn = isLightOn _veh;
-				if(_isOn) then {
-					[] spawn {
+			_cmdr = commander _veh;
+			_gnr = gunner _veh;
+			if(_veh isKindOf "Air") then {
+				if((player == _drv) || (player == _cmdr) || (player == _gnr)) then { 
+					_isOn = isCollisionLightOn _veh;
+					if(_isOn) then { 
 						player action ["CollisionLightOff", _veh];
-						hint "Anti-Kollisionslicht AUS"; // nur zu Debug-Zwecken
-					};
-				} else {
-					[] spawn {
+					} else { 
 						player action ["CollisionLightOn", _veh];
-						hint "Anti-Kollisionslicht AN"; // nur zu Debug-Zwecken
 					};
+					_handled = true;
+				} else {
+					hint "Du hast NICHT die Kontrolle !?";
 				};
-				_handled = true;
-			} else {
-				hint "Du steuerst kein Luftfahrzeug!?"; // nur zu Debug-Zwecken
 			};
-		};
+		}; 
 	};
 
 	//Y Player Menu
