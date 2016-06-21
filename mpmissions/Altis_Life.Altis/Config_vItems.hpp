@@ -1009,6 +1009,17 @@ class VirtualItems {
 		edible = -1;
 		icon = "icons\ico_hefe.paa";
 	};
+	
+	class cereals {
+		variable = "cereals";
+		displayName = "STR_Item_cereals";
+		weight = 2;
+		buyPrice = -1;
+		sellPrice = -1;
+		illegal = false;
+		edible = -1;
+		icon = "icons\ico.getreide.paa";
+	};
 
 	class cornmeal {
 		variable = "cornmeal";
@@ -1020,11 +1031,22 @@ class VirtualItems {
 		edible = -1;
 		icon = "icons\ico_cornmeal.paa";
 	};
+	
+	class watersources {
+		variable = "watersources";
+		displayName = "STR_Item_watersources";
+		weight = 1;
+		buyPrice = -1;
+		sellPrice = -1;
+		illegal = false;
+		edible = -1;
+		icon = "icons\ico.wassertropfen.paa";
+	};
 
 	class bottles {
 		variable = "bottles";
 		displayName = "STR_Item_Bottles";
-		weight = 2;
+		weight = 4;
 		buyPrice = 100;
 		sellPrice = 75;
 		illegal = false;

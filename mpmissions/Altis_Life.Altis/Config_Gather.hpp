@@ -58,6 +58,20 @@ class CfgGather
 			zones[] = { "hops_1" };
 			item = "";			
 		};
+		
+		class cereals //Getreide
+		{
+			amount = 3;
+			zones[] = { "cereals_1" }; 
+			item = "";
+		};
+		
+		class watersources //Wasserquelle
+		{
+			amount = 5;
+			zones[] = { "watersources_1" }; 
+			item = "";
+		};
 	};
   /*
 This block can be set using percent,if you want players to mine only one resource ,just leave it as it is.

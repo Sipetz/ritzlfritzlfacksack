@@ -110,4 +110,31 @@ class ProcessAction {
         	NoLicenseCost = 350;
 	};
 	
+	class cornmeal {
+		
+        	MaterialsReq[] = {{"cereals",1}};
+		MaterialsGive[] = {{"cornmeal",1}};
+        	Text = "STR_Process_cornmeal";
+        	//ScrollText = "Mix cornmeal";
+        	NoLicenseCost = 350;
+	};
+	
+	class waterBottle {
+		
+        	MaterialsReq[] = {{"watersources",1},{"bottles",1}};
+		MaterialsGive[] = {{"waterBottle",1}};
+        	Text = "STR_Process_waterBottle";
+        	//ScrollText = "Mix waterBottle";
+        	NoLicenseCost = 350;
+	};
+	
+	class Bottles {
+		
+        	MaterialsReq[] = {{"glass",1}};
+		MaterialsGive[] = {{"Bottles",1}};
+        	Text = "STR_Process_Bottles";
+        	//ScrollText = "Process Bottle";
+        	NoLicenseCost = 350;
+	};
+	
 };

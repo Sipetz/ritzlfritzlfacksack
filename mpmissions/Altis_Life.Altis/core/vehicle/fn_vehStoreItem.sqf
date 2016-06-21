@@ -27,7 +27,7 @@ _inv = _veh_data select 0;
 if(_ctrl == "goldbar" && {!(life_trunk_vehicle isKindOf "LandVehicle")}) exitWith {hint localize "STR_NOTF_canOnlyStoreInLandVeh";};
 
 _Truck = TypeOf life_trunk_vehicle;
-_FuelStuff = ["oil_unprocessed","oil_processed"]; //Wich Items can be stored in?
+_FuelStuff = ["oil_unprocessed","oil_processed","watersources"]; //Wich Items can be stored in?
 _FuelTrucks = ["C_Van_01_fuel_F","B_Truck_01_fuel_F","O_Truck_02_fuel_F","O_Truck_03_fuel_F"]; //Fuel Trucks, who are allowed to carry fuel
 
 switch (true) do
@@ -37,8 +37,8 @@ case (!(_ctrl in _FuelStuff) && !(_Truck in _FuelTrucks)): {life_TankLaster = 2}
 case (!(_ctrl in _FuelStuff) && (_Truck in _FuelTrucks)): {life_TankLaster = 3}; //NonFuel in FuelTruck -> Nope
 case ((_ctrl in _FuelStuff) && !(_Truck in _FuelTrucks)): {life_TankLaster = 4}; //Fuel in NonFuelTruck -> Nope!
 };
-if (life_TankLaster == 3) exitWith {hint "Du kannst nur Öl oder Kerosin in einen Tanklaster füllen!)"};
-if (life_TankLaster == 4) exitWith {hint "Du kannst Öl oder Kerosin NUR in einen Tanklaster füllen!)";};
+if (life_TankLaster == 3) exitWith {hint "Du kannst nur Wasser Öl oder Kerosin in einen Tanklaster füllen!)"};
+if (life_TankLaster == 4) exitWith {hint "Du kannst Wasser Öl oder Kerosin NUR in einen Tanklaster füllen!)";};
 
 if(_ctrl == "money") then
 {

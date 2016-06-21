@@ -3573,7 +3573,7 @@
 			<French>Vous avez traité vos item(s)!</French>
 			<Italian>Hai processato i tuoi oggetti!</Italian>
 			<Portuguese>Você processou seu(s) item(s)</Portuguese>
-			<German>Sie haben Ihre Position (en) verarbeitet!</German>
+			<German>Sie haben Ihre Rohstoffe verarbeitet!</German>
 		</Key>
 		<Key ID="STR_NOTF_RapidAction">
 			<Original>You can't rapidly use action keys!</Original>
@@ -6527,6 +6527,14 @@
 			<Original>Yeast</Original>
 			<German>Hefe</German>
 		</Key>
+		<Key ID="STR_Item_watersources">
+			<Original>Water</Original>
+			<German>Wasser</German>
+		</Key>
+		<Key ID="STR_Item_cereals">
+			<Original>Cereals</Original>
+			<German>Getreide</German>
+		</Key>
 		<Key ID="STR_Item_Cornmeal">
 			<Original>Cornmeal Grain</Original>
 			<German>Getreidemehl</German>
@@ -6746,12 +6754,45 @@
 			<Portuguese>Licença de Cimento</Portuguese>
 			<Polish>Wytwórca cementu</Polish>
 		</Key>
+		<Key ID="STR_License_cornmeal">
+			<Original>cornmeal Mixing License</Original>
+			<Czech></Czech>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>GetreidemehlMisch-Lizenz</German>
+			<French></French>
+			<Italian></Italian>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+		</Key>
+		<Key ID="STR_License_waterBottle">
+			<Original>waterBottle Mixing License</Original>
+			<Czech></Czech>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Wasserabfüll-Lizenz</German>
+			<French></French>
+			<Italian></Italian>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+		</Key>
+		<Key ID="STR_License_Bottles">
+			<Original>bottle manufacturing License</Original>
+			<Czech></Czech>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Flaschenherstellungs-Lizenz</German>
+			<French></French>
+			<Italian></Italian>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+		</Key>
 		<Key ID="STR_License_Medmarijuana">
 			<Original>Medical Marijuana License</Original>
 			<Czech>Medical Marihuana Licence</Czech>
 			<Spanish>Licencia de Marihuana Medicinal</Spanish>
 			<Russian></Russian>
-			<German>Medizinisches Marijuana-Lizenz</German>
+			<German>Medizinische Marijuana-Lizenz</German>
 			<French>Marijuana Médicale Licence</French>
 			<Italian>Medical Marijuana Licenza</Italian>
 			<Portuguese>Licença Medical Marijuana</Portuguese>
@@ -7394,6 +7435,39 @@
 			<Italian>Processando Cemento</Italian>
 			<Portuguese>Misturando Cimento</Portuguese>
 			<Polish>Mielenie cementu</Polish>
+		</Key>
+		<Key ID="STR_Process_cornmeal">
+			<Original>Mixing Cornmeal</Original>
+			<Czech>Míchání Cornmeal</Czech>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Getreidemehl wird gemischt</German>
+			<French></French>
+			<Italian></Italian>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+		</Key>
+		<Key ID="STR_Process_waterBottle">
+			<Original>Mixing waterBottle</Original>
+			<Czech></Czech>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Wasserflasche wird Abgefüllt</German>
+			<French></French>
+			<Italian></Italian>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+		</Key>
+		<Key ID="STR_Process_Bottles">
+			<Original>Glass bottle is Made</Original>
+			<Czech></Czech>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Glasflasche wird Hergestellt</German>
+			<French></French>
+			<Italian></Italian>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
 		</Key>
 		<Key ID="STR_Process_Stay">
 			<Original>You need to stay within 10m to process.</Original>
@@ -9459,6 +9533,28 @@
 			<Polish></Polish>
 			<Italian></Italian>
 		</Key>
+		<Key ID="STR_MAR_cereals_Field">
+			<Original>cereals Field</Original>
+			<Czech></Czech>
+			<French></French>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Getreide Felder</German>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_MAR_watersources_Field">
+			<Original>water sources</Original>
+			<Czech></Czech>
+			<French></French>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Wasserquelle</German>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+			<Italian></Italian>
+		</Key>
 		<Key ID="STR_MAR_yeast_Field">
 			<Original>Yeast Field</Original>
 			<Czech></Czech>
@@ -9700,6 +9796,39 @@
 			<Portuguese>Processador de Pedra</Portuguese>
 			<Polish>Wytwórnia cementu z kamienia</Polish>
 			<Italian>Processo Roccia</Italian>
+		</Key>
+		<Key ID="STR_MAR_cornmeal_Processing">
+			<Original>cornmeal Processing</Original>
+			<Czech></Czech>
+			<French></French>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Getreidemehl Verarbeitung</German>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_MAR_waterBottle_Processing">
+			<Original>water Processing</Original>
+			<Czech></Czech>
+			<French></French>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Wasser Verarbeitung</German>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_MAR_Bottles_Processing">
+			<Original>Glass bottles processing</Original>
+			<Czech></Czech>
+			<French></French>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Glasflaschen Verarbeitung</German>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+			<Italian></Italian>
 		</Key>
 		<Key ID="STR_MAR_Cement_Trader">
 			<Original>Cement Trader</Original>
@@ -9987,6 +10116,17 @@
 			<Polish>Przetop piasek na szkło</Polish>
 			<Italian>Lavorazione Sabbia</Italian>
 		</Key>
+		<Key ID="STR_MAR_Process_glass">
+			<Original>Process glass</Original>
+			<Czech></Czech>
+			<French></French>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Verarbeite Glas</German>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+			<Italian></Italian>
+		</Key>
 		<Key ID="STR_MAR_Process_Rock">
 			<Original>Process Rock</Original>
 			<Czech>proces rock</Czech>
@@ -9997,6 +10137,28 @@
 			<Portuguese>Processar Pedra</Portuguese>
 			<Polish>Zmiel skały na cement</Polish>
 			<Italian>Processo Roccia</Italian>
+		</Key>
+		<Key ID="STR_MAR_Process_cereals">
+			<Original>Process cereals</Original>
+			<Czech></Czech>
+			<French></French>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Verarbeite Getreide</German>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_MAR_Process_watersources">
+			<Original>Process watersources</Original>
+			<Czech></Czech>
+			<French></French>
+			<Spanish></Spanish>
+			<Russian></Russian>
+			<German>Verarbeite Quellwasser</German>
+			<Portuguese></Portuguese>
+			<Polish></Polish>
+			<Italian></Italian>
 		</Key>
 		<Key ID="STR_MAR_Wong_Food_Cart">
 			<Original>Wong's Food Cart</Original>

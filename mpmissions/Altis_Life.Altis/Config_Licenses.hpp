@@ -120,6 +120,30 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+	
+	class cornmeal {
+        variable = "cornmeal";
+        displayName = "STR_License_cornmeal";
+        price = 1000;
+        illegal = false;
+        side = "civ";
+    };
+	
+	class waterBottle {
+        variable = "waterBottle";
+        displayName = "STR_License_waterBottle";
+        price = 1000;
+        illegal = false;
+        side = "civ";
+    };
+	
+	class Bottles {
+        variable = "Bottles";
+        displayName = "STR_License_Bottles";
+        price = 1000;
+        illegal = false;
+        side = "civ";
+    };
 
     class medmarijuana {
         variable = "medmarijuana";
