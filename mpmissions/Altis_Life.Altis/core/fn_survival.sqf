@@ -9,7 +9,7 @@
 private["_fnc_food","_fnc_water","_foodTime","_waterTime","_bp","_walkDis","_lastPos","_curPos"];
 
 	//TFAR - Task Force Radio - ChannelCheck:
-	[] spawn
+/*	[] spawn
 	{
 		private["_ChannelName","_ServerName","_isTeamSpeakPluginEnabled"];
 		sleep 15;
@@ -23,7 +23,7 @@ private["_fnc_food","_fnc_water","_foodTime","_waterTime","_bp","_walkDis","_las
 			_IstAdmin = ((call life_adminlevel) > 0);
 			_WhiteListedChannels = ["TaskForceRadio"];
 
-			if(!_IstAdmin && _ServerName != "Sipetz & Friends" )then{_DarfNixSehen = true;};
+			if(!_IstAdmin && _ServerName != "pro-noobs.de:20020" )then{_DarfNixSehen = true;};
 			if(!_IstAdmin && !(_ChannelName in _WhiteListedChannels))then{_DarfNixSehen = true;};
 			if(!_IstAdmin && !_isTeamSpeakPluginEnabled)then{_DarfNixSehen = true;};
 
@@ -32,7 +32,7 @@ private["_fnc_food","_fnc_water","_foodTime","_waterTime","_bp","_walkDis","_las
 			sleep 3;
 		};
 	}; 	
-
+*/
 
 _fnc_food =  {
 	if(life_hunger < 2) then {player setDamage 1; hint localize "STR_NOTF_EatMSG_Death";}
