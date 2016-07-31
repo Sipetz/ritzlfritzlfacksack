@@ -109,6 +109,8 @@ class CarShops {
             { "C_Hatchback_01_sport_F", { "life_coplevel", "SCALAR", 1 } },
             { "B_MRAP_01_F", { "life_coplevel", "SCALAR", 2 } },
             { "B_MRAP_01_hmg_F", { "life_coplevel", "SCALAR", 3 } },
+			{ "Jonzie_Tow_Truck", { "life_coplevel", "SCALAR", 3 } },
+			{ "Jonzie_Highway", { "life_coplevel", "SCALAR", 3 } },
 			{ "I_MRAP_03_F", { "life_coplevel", "SCALAR", 4 } }
         };
     };
@@ -160,14 +162,14 @@ class LifeCfgVehicles {
     *    etc etc etc
     *
     */
-
+	
     class Default {
         vItemSpace = -1;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = -1;
         textures[] = {};
     };
-
+	
     class I_Truck_02_medical_F {
         vItemSpace = 150;
         licenses[] = { {""}, {""}, {""}, {""} };
@@ -735,6 +737,22 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class B_Truck_01_fuel_F {
+        vItemSpace = 50;
+        vFuelSpace = 50000;
+        licenses[] = { {"trucking"}, {""}, {""}, {""} };
+        price = 250000;
+        textures[] = {};
+    };
+	
+	class Jonzie_Tow_Truck {
+        vItemSpace = 50;
+        vFuelSpace = 50000;
+        licenses[] = { {"trucking"}, {""}, {""}, {""} };
+        price = 250000;
+        textures[] = {};
+    };
+	
+	class Jonzie_Highway {
         vItemSpace = 50;
         vFuelSpace = 50000;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
