@@ -1,5 +1,9 @@
 disableChannels[]={0,1,2};
 
+// erlaubt das Schreiben der SQF-Files und erneutes Einlesen in ArmA zur Laufzeit mit "1 call BIS_fnc_recompile;" in der Debug-Konsole
+allowFunctionsRecompile = 1;
+
+
 #include "Config_Spyglass.hpp"
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
